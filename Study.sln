@@ -4,6 +4,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Timer", "Timer\Timer.csproj
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleApplication1", "ConsoleApplication1\ConsoleApplication1.csproj", "{38A693C8-EBD1-424F-A6CA-DA72A6437622}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Reactor", "Reactor\Reactor.csproj", "{30E24962-17E9-4DCA-8341-183932E5CC50}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReactorClient", "ReactorClient\ReactorClient.csproj", "{6D5E50D3-6AC2-4811-A1FF-740B94AC16DE}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -18,5 +22,13 @@ Global
 		{38A693C8-EBD1-424F-A6CA-DA72A6437622}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{38A693C8-EBD1-424F-A6CA-DA72A6437622}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{38A693C8-EBD1-424F-A6CA-DA72A6437622}.Release|Any CPU.Build.0 = Release|Any CPU
+		{30E24962-17E9-4DCA-8341-183932E5CC50}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{30E24962-17E9-4DCA-8341-183932E5CC50}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{30E24962-17E9-4DCA-8341-183932E5CC50}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{30E24962-17E9-4DCA-8341-183932E5CC50}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6D5E50D3-6AC2-4811-A1FF-740B94AC16DE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6D5E50D3-6AC2-4811-A1FF-740B94AC16DE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6D5E50D3-6AC2-4811-A1FF-740B94AC16DE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6D5E50D3-6AC2-4811-A1FF-740B94AC16DE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
