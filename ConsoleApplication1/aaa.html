@@ -1,0 +1,2645 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1">
+    <title>目录维护 - 北京嘉林药业股份有限公司</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+    <meta name="keywords" content="知识目录管理-网格_kng_kngcatalogmgmt" />
+    <meta name="description" content="知识目录管理-网格_kng_kngcatalogmgmt" />
+
+
+    <script type="text/javascript" src="https://staticbd.yunxuetang.cn/yxt/SystemFiles//Js/new/tingyun-rum.js?v=10.22.52"></script><script type="text/javascript" src="https://staticbd.yunxuetang.cn/yxt/SystemFiles//Js/jquery/jquery.min.js?v=10.22.52"></script><script type="text/javascript" src="https://staticbd.yunxuetang.cn/yxt/SystemFiles//Js/jquery/jquery-ui.custom.min.js?v=10.22.52"></script><script type="text/javascript" src="https://staticbd.yunxuetang.cn/yxt/SystemFiles//Js/jquery/jquery.livequery.js?v=10.22.52"></script><script type="text/javascript" src="https://staticbd.yunxuetang.cn/yxt/SystemFiles//Js/jquery/jquery.validate_new.js?v=10.22.52"></script><script type="text/javascript" src="https://staticbd.yunxuetang.cn/yxt/SystemFiles//Js/jquery/jquery.mCustomScrollbar.concat.min.js?v=10.22.52"></script><script type="text/javascript" src="https://staticbd.yunxuetang.cn/yxt/SystemFiles//Js/dist/common.js?v=10.22.52"></script><script type="text/javascript" src="https://staticbd.yunxuetang.cn/yxt/SystemFiles//Js/new/functions.js?v=10.22.52"></script><script type="text/javascript" src="https://staticbd.yunxuetang.cn/yxt/SystemFiles//Js/new/plugin/layer/layer.js?v=10.22.52"></script><script type="text/javascript" src="https://staticbd.yunxuetang.cn/yxt/SystemFiles//Js/new/languages/jquery.i18n.properties-1.0.9.js?v=10.22.52"></script><script type="text/javascript" src="https://staticbd.yunxuetang.cn/yxt/SystemFiles//Js/new/languages/main.js?v=10.22.52"></script><script type="text/javascript">currentSkinName="elearning30";var lecaiAPiUrl="https://api-qidatestin.yunxuetang.cn/v1/";</script><link href="https://staticbd.yunxuetang.cn/yxt/SystemFiles//Themes/elearning30/modified.min.css?v=10.22.52" type="text/css" rel="stylesheet" /><link href="https://staticbd.yunxuetang.cn/yxt/SystemFiles//Themes/elearning30/new/normalize.css?v=10.22.52" type="text/css" rel="stylesheet" /><link href="https://staticbd.yunxuetang.cn/yxt/SystemFiles//Themes/elearning30/new/elearning.css?v=10.22.52" type="text/css" rel="stylesheet" /><link href="https://staticbd.yunxuetang.cn/yxt/SystemFiles//Themes/elearning30/uc/ui.core.css?v=10.22.52" type="text/css" rel="stylesheet" /><link href="https://staticbd.yunxuetang.cn/yxt/SystemFiles//Themes/elearning30/new/style.css?v=10.22.52" type="text/css" rel="stylesheet" /><link href="https://staticbd.yunxuetang.cn/yxt/SystemFiles//Themes/elearning30/new/Zebra_DatePicker.css?v=10.22.52" type="text/css" rel="stylesheet" /><link href="/CSS/iconfonts/iconfont.css?v=10.22.52" rel="stylesheet" type="text/css" /><link href="/CSS/cfont/iconfont.css?v=10.22.52" rel="stylesheet" type="text/css" /><link href="/CSS/navfont/iconfont.css?v=10.22.52" rel="stylesheet" type="text/css" /><link href="https://staticbd.yunxuetang.cn/yxt/SystemFiles//Themes/elearning30/font-awesome/4.4.0/css/font-awesome.css?v=10.22.52" type="text/css" rel="stylesheet" />
+
+    <!--[if lte IE 8]>
+    <link rel="stylesheet" href="https://staticbd.yunxuetang.cn/yxt/SystemFiles/Themes/elearning30/new/IE8.css" />
+    <script src='https://staticbd.yunxuetang.cn/yxt/SystemFiles/Js/new/IE8.js' type="text/javascript"></script>
+    <![endif]-->
+
+</head>
+
+
+<div class="elbrowserdiv-wrapper" style="display: none;" id="divelbrowser" index="0">
+    <div class="elbrowser-wrapper"></div>
+    <div class="elbrowser-box">
+        <div class="text-center mb20
+ " style="font-size: 18px;
+ font-weight: bold;" data-localize="core_lbl_browserversionusinglower">
+        </div>
+        <div class="text-center lh26 font-size-14" data-localizeph="core_lbl_systemdetectedthatbrowserversion"><label><span id="elbrowserienum"></span></label></div>
+        <div class="text-center lh26 font-size-14" data-localize="core_lbl_informationsecurityconsiderations"></div>
+        <div class="clearfix mt35">
+            <div class="span-9 mt8 text-left">
+
+            </div>
+            <div class="span-15 text-right
+ ">
+                <button type="button" onclick="elbrowseropen()" class="btn btn-smd mr20 btn-primary " data-localize="core_lbl_upgradeyourbrowser"></button>
+                <button type="button" onclick="elbrowserclose()" data-localize="sys_btn_gotit" class="btn btn-smd"></button>
+            </div>
+        </div>
+    </div>
+</div>
+<style>
+    .elbrowserdiv-wrapper {
+        position: fixed;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 10001;
+    }
+
+    .elbrowser-wrapper {
+        position: fixed;
+        background-color:#000;
+        opacity:0.6;
+        filter: alpha(opacity=60);
+        -moz-opacity: 0.6;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 10001;
+    }
+
+    .elbrowser-box {
+        position: relative;
+        background: #fff;
+        padding-top: 30px;
+        width: 530px;
+        border: solid 1px #e4e4e4;
+        border-radius: 4px;
+        padding-left: 30px;
+        padding-right: 30px;
+        padding-bottom: 35px;
+        margin: 0 auto;
+        top: 50%;
+        -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+        transform: translateY(-50%);
+        z-index: 10002;
+    }
+
+</style>
+<script type="text/javascript">
+
+    //页面加载
+    jQuery(document).ready(function () {
+        loadPropertiesForAsync('divelbrowser');
+    });
+    iselbrowserLtIE9 ()
+    function iselbrowserLtIE9 () {
+        var userAgent = navigator.userAgent,
+            isIE = userAgent.indexOf('compatible') > -1 && userAgent.indexOf('MSIE') > -1,
+            matchArr = userAgent.match(/MSIE\s+(\d+\.\d+);/),
+            ieVersion
+        if (isIE && matchArr) {
+            ieVersion = parseInt(matchArr[1])
+            if (ieVersion <= 9) {
+                if(checkelbrowser()){
+                    $("#elbrowserienum").html(ieVersion);
+                    $('#divelbrowser').show();
+                }
+            }
+        }
+    }
+    function elbrowseropen()
+    {
+        window.open("/downBrowser/download.html");
+    }
+
+    function elbrowserclose()
+    {
+        setelbrowserCookie("elbrowserCookie",new Date().toLocaleDateString(),3600);
+        $('#divelbrowser').hide();
+    }
+
+    function setelbrowserCookie(name, value, expdays) {
+        var expdate = new Date();
+        expdate.setDate(expdate.getDate() + expdays);
+        document.cookie = name + "=" + escape(value) + ";expires=" + expdate.toUTCString();
+    }
+    function getelbrowserCookie(name) {
+        var start = document.cookie.indexOf(name + "=");
+        if (start != -1) {
+            start = start + name.length + 1;
+            var end = document.cookie.indexOf(";", start);
+            if (end == -1)
+                end = document.cookie.length;
+            return unescape(document.cookie.substring(start, end));
+        }
+        return "";
+    }
+    function checkelbrowser(){
+        var strelbrowser= getelbrowserCookie("elbrowserCookie");
+        if(strelbrowser=="1" || new Date().toLocaleDateString() == strelbrowser)
+        {
+            return false;
+        }
+        return true
+    }
+
+</script>
+
+
+
+
+
+
+<script>
+
+    function handleCenter(className){
+        var containHeight=document.documentElement.clientHeight-300;
+        var lstImg=jQuery(className);
+        for(var i=0,j=lstImg.length;i<j;i++){
+            //图片大小大于可以容纳的大小
+            if(lstImg.eq(i).height()>containHeight){
+                lstImg.eq(i).css("top","auto");
+                lstImg.eq(i).css("bottom",0);
+            }
+        }
+    }
+    jQuery(document).ready(function(){
+        handleCenter(".floatwindow_LeftCenter");
+        handleCenter(".floatwindow_RightCenter");
+    });
+</script>
+
+
+
+
+
+
+
+
+
+
+<div class="onlineserviceall">
+    <div class="onlineservicebox" style="display: none;">
+        <div class="head hand" onclick="hidenOnlineService();">
+            <div class="close">
+            </div>
+        </div>
+        <!--在线客服内容-->
+        <div id="divEasemobConfig" class="body textcenter" style="min-height: 200px">
+        </div>
+    </div>
+    <div class="onlineserviceboxpic" style="display: block;" onclick='OpenLeyu()'
+         onmouseover="this.className='onlineserviceboxpic filteropcity';" onmouseout="this.className='onlineserviceboxpic';">
+    </div>
+</div>
+<script type="text/javascript">
+    function OpenLeyu(serviceNum) {
+        $('.yxtCustomerBtn')[0].click();
+        console.log($('.yxtCustomerBtn')[0]);
+    }
+</script>
+<script type="text/javascript">
+    var wid = "height=450,width=650,directories=no,location=no,menubar=no,resizable=yes,status=no,toolbar=no,top=100,left=200";
+    var sss = '';
+
+    var link = document.createElement('a');
+    link.className = "yxtCustomerBtn";
+    document.body.appendChild(link);
+    (function (w, d, e, x) {
+        w[e] = function () {
+            w.cbk = w.cbk || []
+            w.cbk.push(arguments);
+        }
+        x = d.createElement("script");
+        x.async = true;
+        x.id = "zhichiScript";
+        x.className = "yxtCustomerBtn"; //该class绑定到自定义按钮上 第一步
+        x.src = "https://chat.sobot.com/chat/frame/v2/entrance.js?sysnum=4694c934c1a14bba96014dec19dfb43e&channelid=2";
+        d.body.appendChild(x);
+    })(window, document, "zc");
+    zc("config", {
+        uname: "匿名用户",
+        realname: "匿名用户",
+        remark: "云学堂",
+        source: 0,
+        title_flag: 2,
+        custom_title: "匿名机构域名",
+        custom: true, //设置自定义生效 第二步
+        params: JSON.stringify({ level: 'b'|| '', orgid: 'b7adf5e4-3709-48cd-9929-9e48e664310c' || '' })
+    })
+</script>
+<script type="text/javascript">
+    var urllocation=window.location.href;
+    window.easemobim = window.easemobim || {};
+    easemobim.config = {
+        hide: true,
+        autoConnect: true,
+        dialogWidth: '360px',
+        dialogHeight: '550px',
+        dialogPosition: { x: '10px', y: '10px' },
+        visitor: {
+            trueName: '',
+            companyName: '',
+            userNickname: '',
+            description: ''
+        },
+        //聊天窗口加载成功回调
+        onready: function () {
+            easemobim.sendExt({
+                ext:{
+                    //custom代表自定义消息，无需修改
+                    "type": "custom",
+                    "msgtype": {
+                        "order": {
+                            "title": "",
+                            "order_title":"",
+                            "item_url": urllocation
+                        }
+                    }
+                }
+            });
+        },
+    };
+
+    $(function () {
+        loadPropertiesForAsync("divEasemobConfig");
+    })
+
+    function showOnlineService()
+    {
+        SyncLoadHtmlContent2('divEasemobConfig', 'EasemobConfig');
+        jQuery(".onlineserviceboxpic").hide();
+        jQuery(".onlineservicebox").show();
+    }
+    function hidenOnlineService()
+    {
+        jQuery(".onlineserviceboxpic").show();
+        jQuery(".onlineservicebox").hide();
+    }
+</script>
+
+
+
+
+<body lang="zh" class="mainbg kng_kngcatalogmgmt_body">
+<div class="kng_kngcatalogmgmt_layout">
+
+
+
+
+    <div id="phonetips" style="display:none;">
+        <div class="phoneTipsNewBar">
+
+            <div class="pull-left" style="width:54px;padding-left:16px;padding-top:31px;">
+                <div class="el-icon-fixed-mobile" style="height:22px;width:22px;"></div>
+            </div>
+            <div class="pull-left" style="padding-top:16px;">
+                <div class="phoneTipsNewBarName">
+                    <span data-localize="sys-lbl-helpline"></span><span> (9:00~20:00)</span></div>
+                <div class="phoneTipsNewBarCode">
+                    400-928-6900</div>
+            </div>
+        </div>
+    </div>
+    <div style="position: fixed;_position: absolute;right: 0px;bottom: 196px;z-index: 450;width: 40px;">
+        <div class="row hand phoneTipsNewBarIcon" id="iconPhoneSelect" onmouseover="showphone()" onmouseout="hidephone()">
+            <div class="el-icon-fixed-barmobile"></div>
+        </div>
+        <div class="splid" style="display: none;"></div>
+    </div>
+
+    <div id="floatLbl"  class="pagerightfix ie6needfixtobottom90" onmouseover="changeHoverStyle(this,'pagerightfix');">
+        <div class="row" onmouseover="this.className='rowselect';" style="display: none;"
+             onclick="window.open('/updateannouncement.htm');" onmouseout="this.className='row';">
+            <div class="iconversionhistory">
+                <span data-localize="sys-lbl-float3"></span></div>
+        </div>
+        <div class="splid" style="display: none;">
+        </div>
+        <div class="row" onmouseover="this.className='rowselect';" onmouseout="this.className='row';">
+            <div class="iconshowtalkpanel"
+                 onclick="window.open('/esindex.htm');">
+                <span data-localize="sys-lbl-float4new"></span></div>
+        </div>
+        <div class="splid">
+        </div>
+        <div class="row" onmouseover="this.className='rowselect';" onmouseout="this.className='row';">
+            <div class="iconphone">
+                <a href='/mobileinstall.htm' data-localize="sys-lbl-float5"></a>
+            </div>
+        </div>
+        <div class="splid">
+        </div>
+        <div class="row" onmouseover="this.className='rowselect';" onmouseout="this.className='row';">
+            <div class="icongototop" onclick="window.scrollTo(0,0);">
+                <span data-localize="sys-lbl-float6"></span></div>
+        </div>
+    </div>
+
+    <style>
+        div.pagerightfix {
+            position: fixed;
+            _position: absolute;
+            right: 0px;
+            bottom: 80px!important;
+            z-index: 450;
+            width: 40px;
+        }
+
+        div.pagerightfixhover {
+            position: fixed;
+            _position: absolute;
+            right: 0px;
+            bottom: 80px!important;
+            z-index: 450;
+            width: 108px;
+        }
+
+        .phoneTipsNewBar {
+            position: fixed;
+            _position: absolute;
+            right: 0px;
+            bottom: 176px;
+            z-index: 450;
+            width: 188px;
+            height: 84px;
+            background: rgba(255, 255, 255, 1);
+            box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.15);
+            filter: progid:DXImageTransform.Microsoft.Shadow(color='#00000026', Direction=135, Strength=5);
+            /*for ie6,7,8*/
+            margin-right: 50px;
+        }
+
+        .phoneTipsNewBarName {
+            height: 22px;
+            font-size: 12px;
+            font-family: PingFangSC-Regular, PingFang SC;
+            font-weight: 400;
+            color: rgba(117, 117, 117, 1);
+            line-height: 22px;
+        }
+
+        .phoneTipsNewBarCode {
+            width: 101px;
+            height: 22px;
+            font-size: 14px;
+            font-family: PingFangSC-Regular, PingFang SC;
+            font-weight: 400;
+            color: rgba(38, 38, 38, 1);
+            line-height: 22px;
+        }
+
+        .phoneTipsNewBarIcon {
+            box-sizing: content-box;
+            margin-left: 0!important;
+            margin-right: 0!important;
+            height: 34px;
+            width: 40px;
+            background-color: #b7c5ca;
+            color: #FFFFFF;
+            font-size: 12px;
+            line-height: 36px;
+            overflow: hidden;
+        }
+    </style>
+    <script type="text/javascript">
+        function showphone() {
+            jQuery("#iconPhoneSelect").css({ "backgroundColor": "#59a9c6" });
+            jQuery("#phonetips").show();
+        }
+        function hidephone() {
+            jQuery("#iconPhoneSelect").css({ "backgroundColor": " #b7c5ca" });
+            jQuery("#phonetips").hide();
+        }
+    </script>
+
+    <div class="topnotice" style="background-color:#444444;">
+        <div class="noticemsg" style="width:1000px; color:#F0F0F0;"><span class="content"></span></div>
+    </div>
+
+
+
+
+    <style type="text/css">
+        div.pageheader div.content{width:1200px!important;padding-top:15px!important;}
+        div.pageheader31 div.headerbg .pageheader{
+            height: 90px!important;
+        }
+        div.pageheader31 div.headerbg .pagenav{
+            background: #00a73c !important;
+        }
+        div.pageheader31 div.headerbg div.navbar_default {
+            line-height: 30px!important;
+            height: 30px!important;
+            margin-top: 0px!important;
+            background: none!important;
+            width:1200px !important;
+        }
+        div.pageheader31 div.headerbg div.navbar_default ul {
+            height: 30px!important;
+            line-height: 30px!important;
+            width:1200px !important;
+        }
+        div.pageheader31 div.headerbg div.nav-new ul li.mouseover>a{
+            background: none!important;
+        }
+        div.pageheader31 div.headerbg div.navbar_default ul li.seperate {
+            width: 1px!important;
+            background: none!important;
+            padding:0px !important;
+        }
+
+        div.pageheader31 div.headerbg div.navbar_default ul li {
+            height: 30px!important;
+            line-height:30px;
+            padding:0 18px !important;
+        }
+
+        div.pageheader31 div.headerbg div.navbar_default ul li a {
+            font-size: 16px!important;
+            color: #ffffff!important;
+            height: 30px!important;
+            line-height: 30px!important;
+            text-align: center!important;
+            padding:0px !important;
+            margin-top:0px !important;
+        }
+        div.pageheader31 div.headerbg div.navbar_default ul li:hover,
+        div.pageheader31 div.headerbg div.navbar_default ul li.mouseover {
+            background: #22ac38!important;
+            height:30px !important;
+            line-height:30px !important;
+        }
+        div.pageheader31 div.headerbg div.navbar_default ul li.mouseover a,
+        div.pageheader31 div.headerbg div.navbar_default ul li:hover > a {
+            background: none!important;
+            font-size: 16px!important;
+            display: block;
+            height: 30px!important;
+            line-height: 30px!important;
+            text-align: center!important;
+            color: #ffffff !important;
+        }
+        div.pageheader31 div.headerbg div.nav-new ul li.mouseover>a{
+            background: none!important;
+        }
+        /*更多*/
+        div.pageheader31 div.headerbg div.navbar_default ul li.morehover .blockmore .c_navmorediv1 a {
+            font-size: 14px!important;
+            color: #333!important;
+            line-height: 25px!important;
+            font-weight: bold!important;
+            height: 32px!important;
+            padding: 0px!important;
+            width: auto!important;
+        }
+
+        div.pageheader31 div.headerbg div.navbar_default ul li.morehover {
+            width: 62px!important;
+            height:30px !important;
+            line-height:30px !important;
+            background: none !important;
+        }
+        div.pageheader31 div.headerbg div.navbar_default ul li.morehover .block{
+            margin-left: -1px !important;
+        }
+        div.pageheader31 div.headerbg div.navbar_default ul li.morehover a.linkmore {
+            height: 30px!important;
+            line-height: 31px!important;
+            width: 60px!important;
+            background-color: #fff!important;
+            background-image: none!important;
+            color:#333 !important;
+        }
+
+        div.pageheader31 div.navbar_default ul li.more a.linkmore {
+            width: 60px!important;
+            height: 29px!important;
+            background-position: right 18px!important;
+            background: none!important;
+        }
+
+        div.pageheader31 div.headerbg div.navbar_default ul li.morehover .blockmore {
+            top: 30px!important;
+        }
+
+        div.pageheader31 div.headerbg div.navbar_default ul li a.linkmore {
+            font-style: normal!important;
+        }
+
+        .tips ul li {
+            cursor: pointer;
+        }
+        div.pageheader31 div.headerbg div.navbar_default ul li.leftround,
+        div.pageheader31 div.headerbg div.navbar_default ul li.rightround{
+            display: none !important;
+            width: 0px !important;
+        }
+        /*人员信息*/
+        div.pageheader31 .headerbg .pagenav .account .accountblick {
+            color: #fff!important;
+            font-size: 14px!important;
+            height: 30px!important;
+            line-height: 30px!important;
+        }
+        div.pageheader31 .headerbg .pagenav .account .accountblick {
+            background-position: 60px 9px!important;
+        }
+        div.pageheader31 .headerbg .pagenav .account{
+            height:30px!important;
+        }
+        div.pageheader31 .headerbg .pagenav .accounthover{
+            height:30px!important;
+            line-height: 30px!important;
+            margin-top: 0!important;
+        }
+        div.pageheader31 .headerbg .accounthover .accountblick1 {
+            height: 30px!important;
+            font-size: 14px!important;
+            line-height: 30px!important;
+            background-position: right 19px !important;
+            text-indent: 5px !important;
+            background-image: none !important;
+            background-color: #22ac38!important;
+        }
+
+        div.pageheader31 .headerbg .accounthover .accountpanel {
+            top: 30px!important;
+        }
+        div.pageheader31 .headerbg .accounthover .accountpanel div.creditstoday{
+            background-color: #22ac38!important;
+        }
+        /*待办任务*/
+        div.pageheader31 .headerbg .pagenav .stayarea,div.pageheader31 .headerbg .pagenav .msgarea .info,div.pageheader31 .headerbg .pagenav .msgareahover .info{
+            height: 30px!important;
+            line-height: 30px!important;
+        }
+
+        div.pageheader31 .headerbg .pagenav .stayarea .info {
+            margin-right: 5px!important;
+            line-height: 35px!important;
+            height: 30px!important;
+        }
+        div.pageheader31 .headerbg .pagenav .stayarea .info .iconnotic_active {
+            background: url("https://staticbd.yunxuetang.cn/yxt/SystemFiles/Themes/Classic/public/css/images/icon1-2-w.png")no-repeat!important;
+        }
+
+        div.pageheader31 .headerbg .pagenav .stayarea .info .iconnotic_new {
+            background: url("https://staticbd.yunxuetang.cn/yxt/SystemFiles/Themes/Classic/public/css/images/icon1-2-w.png")no-repeat!important;
+        }
+        /*未读消息*/
+
+        div.pageheader31 .headerbg .pagenav .msgarea .info .iconnotic_new {
+            background: url('https://staticbd.yunxuetang.cn/yxt/SystemFiles/Themes/Classic/public/css/images/icon1-1-w.png') no-repeat!important;
+            margin-right: 5px!important;
+            margin-top: 8px!important;
+        }
+
+        div.pageheader31 .headerbg .pagenav .msgarea .info .iconnotic_active {
+            background: url('https://staticbd.yunxuetang.cn/yxt/SystemFiles/Themes/Classic/public/css/images/icon1-1-w.png') no-repeat!important;
+            margin-right: 5px!important;
+        }
+
+        div.pageheader31 .headerbg .pagenav .msgareahover div.dvnumberbg {
+            margin-top: 4px!important;
+            margin-left:2px!important;
+        }
+
+        div.pageheader31 .headerbg .pagenav .msgareahover .info {
+            height: 29px!important;
+        }
+
+        div.dvnumberbg {
+            margin-top: 6px!important;
+            background: url(https://staticbd.yunxuetang.cn/yxt/SystemFiles/Themes/Classic/public/css/images/tallnew.png) no-repeat right -17px!important;
+        }
+
+        div.pageheader31 .headerbg .pagenav .msgarea div.dvnumberbg {
+            margin-top: 6px!important;
+            background: url(https://staticbd.yunxuetang.cn/yxt/SystemFiles/Themes/Classic/public/css/images/tallnew.png) no-repeat right -17px!important;
+        }
+        div.dvnumberbg span.number3,div.pageheader31 .headerbg .pagenav .msgarea div.dvnumberbg span.number,div.pageheader30 .headerbg .header .msgarea div.dvnumberbg span.number,div.dvnumberbg span.number1,div.pageheader31 .headerbg .pagenav .msgareahover div.dvnumberbg span.number {
+            background: url(https://staticbd.yunxuetang.cn/yxt/SystemFiles/Themes/Classic/public/css/images/tallnew.png) no-repeat 0 0!important;
+            margin-left: -5px!important;
+        }
+
+        div.pageheader31 div.headerbg div.navbar_default ul li.rightround{
+            display: none;
+        }
+        div.pageheader31 .headerbg .pagenav .msgareahover .info .iconnotic_new{
+            margin-top:2px!important;
+        }
+        div.pageheader31 .headerbg .pagenav .msgarea,div.pageheader31 .headerbg .pagenav .msgareahover{
+            height: 28px!important;
+            list-style: 30px!important;
+        }
+        div.pageheader31 .headerbg .pagenav .msgareahover .noticpanel{
+            top: 28px!important;
+        }
+        /*搜索*/
+        .text-input2 {
+            width:408px;
+            height: 35px;
+            overflow: hidden;
+            float: right;
+        }
+        .s-search2 {
+            width: 353px;
+            height: 35px;
+            float: left;
+            text-indent:20px;
+            color: #999999;
+            border: solid #00a73c 1px;
+            border-right:none;
+            box-sizing: border-box;
+        }
+        .search-btn2{
+            display: block;
+            width: 54px ;
+            height : 35px;
+            line-height:35px;
+            overflow: hidden;
+            float: left;
+            background: #00a73c;
+            color: #fff;
+            font-size: 16px;
+            cursor: pointer;
+            box-sizing: border-box;
+            text-align: center;
+        }
+        .fl{float:left;}
+        div.pageheader31 .headerbg div.pageheader div.content span.rightarea{padding-top: 15px!important;width:542px!important;}
+    </style>
+
+
+    <script type="text/javascript">
+        function showEventWaitHandlePanel(a) {
+            if (a == "1") {
+
+                //待办事项图标闪烁用
+                var txtType01 = 'SiteMessageForItemIco';
+                var arr01 = '{"key":"' + txtType01 + '"}';
+                //异步保存Session
+                jQuery.ajax({
+                    type: "POST",
+                    contentType: "text/json",
+                    url: "/Services/MyIndexService.svc/SaveSessionLoginStringForItemIco",
+                    data: arr01,
+                    dataType: 'json',
+                    cache: false,
+                    success: function (result) {
+                        if (result == "ok") {
+                            $("#sWait").attr("class", "iconnotic_new");
+                        }
+                    }
+                });
+            }
+            var Value = document.getElementById("WaitToDoMessage").value;
+
+            if (jQuery("#dvDaibanShiyi").is(":hidden")) {
+
+                var left = (jQuery(document).width() - 835) / 2;
+                var top = (jQuery(window).height() - 403) / 2;
+
+                jQuery("#dvDaibanShiyi").css("top", top + "px").css("left", left + "px").show();
+                var a = Value.indexOf("@");
+                var str;
+                if (a == -1) {
+                    str = Value.split("|");
+                }
+                else {
+                    var str1 = Value.substring(0, a);
+                    str = str1.split("|");
+                }
+                if (str.length == 13) {
+                    //2&管理员|1|1|5|0|上午好|1|0|0|0|0|0|0
+                    //返回string类型以‘|’分割 目前包含需要13个数据
+                    //前面数字表示获取内容的顺序，用Str[XX]获取时需要减1
+                    //1：用户名（已过时，不用了） 2：用户上传的知识数（0为没有上传过）
+                    //3：该用户30天内上传的知识数（0为没有上传）
+                    //4：待审核的知识数（0为不需要审核）
+                    //5：已延迟的学习任务数量 6:根据当前时间获取问候语（上午，下午，晚上好）
+                    //7：是否上传过头像（0为未上传，1为上传）
+                    //8：是否安装客户端（0为未安装）
+                    //9：下属员工未完成的任务数量
+                    //10：未指派过任务的下属员工数量
+                    //11：下属员工30天未分享过知识的数量
+                    //12：下属员工7天登入的个数
+                    //13：下属员工未安装移动客户端的
+                    jQuery("#WhatTimeNow").html(str[5] + (getlanguage() == "zh" || getlanguage() == "ha"?"，":","));
+                    var isCount = 0; //判断时候需要显示全部完成的Li
+                    var isShowCount = 1; //判断每一个Li前面显示的数字，所以此JS内顺序不能更换
+                    //做一个有头有脸的人物，从头像做起。赶快上传自己的头像吧！6
+                    if (str[1] != "0") {
+                        jQuery("#FirstShareKNG").hide();
+                        isCount = isCount + 1;
+                    }
+                    else {
+                        jQuery("#FirstShareKNG").show();
+                        jQuery("#markcount2").html(isShowCount);
+                        isShowCount = isShowCount + 1;
+                    }
+                    if (str[4] == "0") {
+                        jQuery("#StudyPlanKNG").hide();
+                        isCount = isCount + 1;
+                    }
+                    else {
+                        jQuery("#StudyPlanKNG").show();
+                        jQuery("#PassStudyPlan").html(str[4]);
+                        jQuery("#markcount3").html(isShowCount);
+                        isShowCount = isShowCount + 1;
+                    }
+                    if (str[3] == "0") {
+                        jQuery("#WaitCkeck").hide();
+                        isCount = isCount + 1;
+                    }
+                    else {
+                        jQuery("#WaitCheckCount").html(str[3]);
+                        jQuery("#WaitCkeck").show();
+                        jQuery("#markcount4").html(isShowCount);
+                        isShowCount = isShowCount + 1;
+                    }
+                    //您已经一个月未分享过任何东东了，立即加入分享的队伍吧！2
+// if (str[7] == "0") {
+// jQuery("#InstallationApps").show();
+// jQuery("#markcount6").html(isShowCount);
+// isShowCount = isShowCount + 1;
+// }
+// else {
+// jQuery("#InstallationApps").hide();
+// isCount = isCount + 1;
+// }
+                    //个学习任务未按时完成！8
+                    //名员工从来没有指派学习任务，立即去指派！9
+                    //名员工已超过30天没有分享任何知识！10
+                    if (str[11] == "0") {
+                        jQuery("#LeaderNotLoginIn").hide();
+                        isCount = isCount + 1;
+                    }
+                    else {
+                        jQuery("#LeaderNotLoginIn").show();
+                        jQuery("#LeaderNotLoginInText").html(str[11]);
+                        jQuery("#markcount10").html(isShowCount);
+                        isShowCount = isShowCount + 1;
+                    }
+// if (str[12] == "0") {
+// jQuery("#LeaderNotInstallationApps").hide();
+// isCount = isCount + 1;
+// }
+// else {
+// jQuery("#LeaderNotInstallationApps").show();
+// jQuery("#LeaderNotInstallationAppsText").html(str[12]);
+// jQuery("#markcount11").html(isShowCount);
+// isShowCount = isShowCount + 1;
+// }
+                    if (isCount != 4) {
+                        jQuery("#NoWaitPlanToDo").hide();
+                        jQuery("#ShowAttention").show();
+                    }
+                    else {
+                        jQuery("#NoWaitPlanToDo").show();
+                    }
+                }
+            }
+        }
+        function closeDaibanShiyi() {
+            jQuery("#dvDaibanShiyi").hide();
+        }
+        function SearchUsersWithNew(a) {
+            if (a == "NotShareKnowledgeWithNew") {
+                addFilter("dvFilter1", "603");
+                jQuery("#spnotice01").html(jQuery.i18n.map['sys_lbl_sendmessageremind'])
+                jQuery("#sptitle01").html(jQuery.i18n.map['sys_lbl_reminder'])
+                jQuery("#txtPress01").val(jQuery.i18n.map['sys_lbl_immediatelyjoinshare'])
+                jQuery("#hidsendtype01").val("NotShareKnowledgeWithNew");
+                GetDataByLabelEName("pnl_employeenotloginInfo01", "WaitToDoRelatedPage", 0, 0, "type", "NotShareKnowledgeWithNew", null);
+            }
+            if (a == "WeekNotLoginWithNew") {
+                addFilter("dvFilter1", "603");
+                jQuery("#spnotice01").html(jQuery.i18n.map['sys_lbl_sendmessageremind'])
+                jQuery("#sptitle01").html(jQuery.i18n.map['sys_lbl_reminder'])
+                jQuery("#txtPress01").val(jQuery.i18n.map['sys_lbl_loginnow'])
+                jQuery("#hidsendtype01").val("WeekNotLoginWithNew");
+                GetDataByLabelEName("pnl_employeenotloginInfo01", "WaitToDoRelatedPage", 0, 0, "type", "WeekNotLoginWithNew", null);
+            }
+            if (a == "AppsNoInstallation") {
+                addFilter("dvFilter1", "603");
+                jQuery("#spnotice01").html(jQuery.i18n.map['sys_lbl_sendmessageremind'])
+                jQuery("#sptitle01").html(jQuery.i18n.map['sys_lbl_reminder'])
+                jQuery("#txtPress01").val(jQuery.i18n.map['sys_lbl_installedmobile'])
+                jQuery("#hidsendtype01").val("AppsNoInstallation");
+                GetDataByLabelEName("pnl_employeenotloginInfo01", "WaitToDoRelatedPage", 0, 0, "type", "AppsNoInstallation", null);
+            }
+        }
+        //发送消息
+        function sendMessageWithNewLj() {
+            var isself = false;
+            if (jQuery("#chbPressToMe01").prop("checked")) {
+                isself = true;
+            }
+            else {
+                isself = false;
+            }
+            var ShowMessage="";
+            var type = jQuery("#hidsendtype01").val();
+            if (type == "AppsNoInstallation") {
+                ShowMessage = jQuery.i18n.map['sys_lbl_promptsend'];
+            }
+            else {
+                ShowMessage = jQuery.i18n.map['sys_lbl_remindermessagesend'];
+            }
+            var content = jQuery("#txtPress01").val();
+            var arr = '{"orgID":"$FunctionLabel.AppContext.CurrentOrgID","userID":"bb402cb7-1ffb-49fc-9360-0fc48defb038","cnName":"管理员","content":"' + content + '","type":"' + type + '","isself":"' + isself + '"}';
+            jQuery.ajax({
+                type: "POST",
+                contentType: "text/json",
+                url: "/Services/CommonService.svc/SendStatisticMessage",
+                data: arr,
+                dataType: 'json',
+                cache: false,
+                success: function (result) {
+                    showMsgSuccessPanel(jQuery('#dvnotice01'), ShowMessage);
+                    jQuery("#dvnotice01").hide();
+                },
+                error: function (XMLHttpRequest, textStatus, errorThrown) {
+                }
+            });
+        }
+        //关闭提醒窗口
+        function closeEmpPop3WithNewLj() {
+            jQuery("#dvnotice01").hide();
+        }
+        //打开提醒窗口
+        function openDivNoticeWithNew() {
+            var left = (jQuery(document).width() - 500) / 2;
+            var top = (jQuery(window).height() - 257) / 2;
+            jQuery("#dvnotice01").css("top", top + "px").css("left", left + "px").show();
+            addFilter("dvFilter1","603");
+        }
+    </script>
+    <div id="pnl_employeenotloginInfo01" class=""></div>
+    <input type="hidden" id="hidsendtype01" />
+
+
+    <div id="dvnotice01" class="sendmsgpanel" style="position: fixed; display: none;z-index:604;height:230px;">
+        <div class="buttonarea" style="width:490px;">
+            <div class="floatleft">
+                <input id="chbPressToMe01" class="checkboxsplit" type="checkbox" /><label id="lblCopyToMe" for="chbCopyToMe" data-localize="sys_lbl_samecopy"></label>
+            </div>
+            <div class="floatright">
+                <input type="button" class="btnselect" data-localize="common_btn_confirm" onclick="sendMessageWithNewLj();" />
+                <input type="button" class="btncancel" data-localize="common_btn_close" onclick="closeEmpPop3WithNewLj();" />
+            </div>
+        </div>
+        <div class="head"><span id="spnotice01">-</span></div>
+        <div class="row" ><span class="radstar">*</span><span id="sptitle01">-</span></div>
+        <div class="body datalistsection"><textarea id="txtPress01" class="textarea color4" style="font-size:12px;" rows="3"></textarea></div>
+    </div>
+    <div class="eventhandlepan" style="position:fixed; z-index:601">
+        <div class="backlog" id="dvDaibanShiyi" style="display:none;position:absolute; z-index:601;">
+            <input type="button" id="close" onclick="closeDaibanShiyi()" value=""></input>
+            <div class="backlogheader clearfix">
+                <label data-localize="sys_lbl_importanttodo" ></label><span><label id="WhatTimeNow"></label><label id="WaitHandle_UserName">管理员</label><label id="ShowAttention" class="hiddenelement"><label data-localize="sys_lbl_matterattend"></label></label></span>
+            </div>
+            <div id="dvBacklogContent" style="padding:0px 20px;">
+                <div class="backlogcontent">
+                    <div class="backlogleft">
+                        <ul>
+                            <!-- 学习使人有趣，分享令人快乐，去分享一个知识试试吧！ -->
+                            <li id="FirstShareKNG" class="hiddenelement"><span id="markcount2" class="markcount">0</span> <p data-localize="sys_lbl_trytoshareaknowledge"></p><a class="btnshare" href="/kng/myshared.htm" data-localize="sys_btn_shareitnow"></a></li>
+                            <!-- 您有{0}个学习任务，即将或已延迟，赶快去学习完成它们吧！ -->
+                            <li id="StudyPlanKNG" class="hiddenelement"><span id="markcount3" class="markcount">0</span> <p data-localizeph="sys_lbl_learntocompletethemnow"><label><span class="colorye" id="PassStudyPlan">0</span></label></p><a class="btnshare" href="/sty/mystudytask.htm" data-localize="sys_btn_learnnow"></a></li>
+                            <!-- 有{0}个知识等您审核哦！ -->
+                            <li id="WaitCkeck" class="hiddenelement"><span id="markcount4" class="markcount">0</span> <p data-localizeph="sys_lbl_knowledgesh"><label><span class="colorye" id="WaitCheckCount">0</span></label></p><a class="btnshare" href="/kng/kngcheck.htm" data-localize="sys_btn_reviewnow"></a></li>
+                            <!-- 安装移动客户端，可以随时随地的轻松观看视频、文档，赶快去安装吧 -->
+                            <!-- <li id="InstallationApps" class="hiddenelement"><span id="markcount6" class="markcount">0</span> <p data-localize="sys_lbl_quicklygoinstallit"></p><a class="btnshare" href="/mobileinstall.htm" data-localize="sys_btn_installnow"></a></li>-->
+
+                            <!-- 您部门中有17人已经7天未登入平台学习了！ -->
+                            <li id="LeaderNotLoginIn" class="hiddenelement"><span id="markcount10" class="markcount">0</span> <p data-localizeph="sys_lbl_loggedinforthelast7days"><label><span class="colorye" id="LeaderNotLoginInText">0</span></label></p><a class="btnshare" onclick="SearchUsersWithNew('WeekNotLoginWithNew')" data-localize="sys_btn_seewho"></a></li>
+                            <!-- 您部门中还有5人未安装客户端，请催促他们尽快安装。 -->
+                            <!--<li id="LeaderNotInstallationApps" class="hiddenelement"><span id="markcount11" class="markcount">0</span> <p data-localizeph="sys_lbl_installtheclientassoonaspossible"><label><span class="colorye" id="LeaderNotInstallationAppsText">0</span></label></p><a class="btnshare" onclick="SearchUsersWithNew('AppsNoInstallation')" data-localize="sys_btn_urgednow"></a></li>-->
+                            <li id="NoWaitPlanToDo" class="hiddenelement CompleteShow"><p data-localize="sys_lbl_everythingok"></p></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <script type="text/javascript">
+        function redirectIndex() {
+            window.location = "/MyHome/MyIndex.ashx";
+        }
+    </script>
+
+    <script type="text/javascript">
+        function OpenUrl(url) {
+            window.open(url);
+        }
+
+        function LocationUrl(url) {
+            window.location.href = url;
+        }
+
+    </script>
+
+    <div class="eventhandlepan" id="onlinestartwarm">
+        <div class="onlineremind" style="display: none; position: fixed;" id="ShowMessage">
+            <div class="header">
+                在线消息提醒<input type="button" value="" onclick="CloseShowMessage()"></input></div>
+            <div class="onlinecontent" id="MsgTitle">
+                <span><a href="">亲，您有一个新消息到达！</a></span>
+                <p>
+                    <a href="">陈晓祥浏览了您分享的课程【培训机构产品DEMO讲解及讨论】<span>点击查看>></span></a></p>
+            </div>
+            <div class="onlinefooter">
+                <input id="btn1" type="button" onclick="CloseShowMessage()" value="我知道了"></input>&nbsp;&nbsp;<input type="checkbox" onclick="SetRemindTime(this)" />最近一周不要提醒我
+            </div>
+        </div>
+    </div>
+
+    <div class="pageheader31" id="onlineendwarm">
+        <div class="headerbg">
+            <div style="display:block;" id="divPageHeader" class="pageheader ">
+                <script type="text/javascript">
+                    function redirectIndex() {
+                        window.location = "http://" + window.location.host;
+                    }
+                </script>
+                <div class="content">
+                    <span onclick="redirectIndex();" style="background-image:url('https://picobd.yunxuetang.cn/sys/13810259926/images/202007/1a937488c4e6405f966114a1cab0826d.png'); cursor:hand;" class="leftarea"></span>
+                    <span class="rightarea clearfix">
+ <div class="text-input2">
+ <div class="pr">
+ <input type="text" placeholder="请输入您需要搜索的知识" class="s-search2" id="txtKeyword" onkeydown="enterToSearch(event);">
+
+ </div>
+
+ <div class="search-btn2" id="btnKnowledgeSearch" onclick="doKnowledgeSearch();">搜索</div>
+ </div>
+ </span>
+                </div>
+            </div>
+            <div class="pagenav">
+                <div class="navbar_default clearfix nav-new">
+                    <ul>
+                        <li class="leftround"></li>
+
+                        <li>
+                            <a id="hylIndex0" href="/jarlinnewhome.htm" target="_self">首页</a>
+                        </li>
+
+                        <li class="seperate">&nbsp;</li>
+                        <li>
+                            <a id="hylIndex0" href="/sty/index.htm" target="_self">学习中心</a>
+                        </li>
+
+                        <li class="seperate">&nbsp;</li>
+                        <li>
+                            <a id="hylIndex0" href="/kng/kngindex.htm" target="_self">企业知识</a>
+                        </li>
+
+                        <li class="seperate">&nbsp;</li>
+                        <li>
+                            <a id="hylIndex0" href="/talent/#/v1/web/index" target="_self">人才发展</a>
+                        </li>
+
+                        <li class="seperate">&nbsp;</li>
+                        <li>
+                            <a id="hylIndex0" href="/newbbs/#/index" target="_self">学习社区</a>
+                        </li>
+
+                        <li class="seperate">&nbsp;</li>
+                        <li>
+                            <a id="hylIndex0" href="/weikeindex.htm" target="_self">微课广场</a>
+                        </li>
+
+                        <li class="seperate">&nbsp;</li>
+                        <li>
+                            <a id="hylIndex0" href="/ymall/ymallcourseindex.htm" target="_blank">选课中心</a>
+                        </li>
+
+                        <li class="seperate">&nbsp;</li>
+                        <li>
+                            <a id="hylIndex0" href="/usm/index.htm" target="_self">团队培训</a>
+                        </li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                        <li class='seperate' style='width:10px;'>&nbsp;</li><li class='more' onmouseover='showMoreMenu(this);' onmouseout='hideMoreMenu(this);'><div class='block'><a class='linkmore'><label data-localize='common_lbl_more'></label></a></div><div class='blockmore clearfix' style='width:876px;'><div class='c_navmorediv1 clearfix'><a href='/apps/signup/signupmgmt.htm'target='_self'><div class='c_navmorediv1img'><img src='https://staticbd.yunxuetang.cn/yxt/SystemFiles/Themes/elearning30/images/appfeature/bigcircle/top_trainmanage.png'/></div><div class='c_navmorediv1p'><div class='c_navmorediv1p1'>培训组织</div><div class='c_navmorediv1p2'>组织培训与考试，管理培训档案</div></div></a></div><div class='c_navmorediv1 clearfix'><a href='/kng/kngcatalog/kngcatalogmgmt.htm'target='_self'><div class='c_navmorediv1img'><img src='https://staticbd.yunxuetang.cn/yxt/SystemFiles/Themes/elearning30/images/appfeature/bigcircle/opr_resourceindex.png'/></div><div class='c_navmorediv1p'><div class='c_navmorediv1p1'>资源管理</div><div class='c_navmorediv1p2'>课程与试卷资源，讲师体系，员工证书</div></div></a></div><div class='c_navmorediv1 clearfix'><a href='/o2o/teacher/teachercenter.htm'target='_self'><div class='c_navmorediv1img'><img src='https://staticbd.yunxuetang.cn/yxt/SystemFiles/Themes/elearning30/images/appfeature/bigcircle/o2o_teacher_center.png'/></div><div class='c_navmorediv1p'><div class='c_navmorediv1p1'>讲师中心</div><div class='c_navmorediv1p2'>公司大咖都在这里，向他们学习吧！</div></div></a></div><div class='c_navmorediv1 clearfix'><a href='/sta/knginventory.htm'target='_self'><div class='c_navmorediv1img'><img src='https://staticbd.yunxuetang.cn/yxt/SystemFiles/Themes/elearning30/images/appfeature/bigcircle/studyoperate.png'/></div><div class='c_navmorediv1p'><div class='c_navmorediv1p1'>学习运营</div><div class='c_navmorediv1p2'>大数据，积分商城，社区管理，运营工具</div></div></a></div><div class='c_navmorediv1 clearfix'><a href='/mgm/index.htm'target='_self'><div class='c_navmorediv1img'><img src='https://staticbd.yunxuetang.cn/yxt/SystemFiles/Themes/elearning30/images/appfeature/bigcircle/mgm_index.png'/></div><div class='c_navmorediv1p'><div class='c_navmorediv1p1'>系统管理</div><div class='c_navmorediv1p2'>组织架构、用户权限、网站样式、安全设置</div></div></a></div><div class='c_navmorediv1 clearfix'><a href='/rptvnew/reportindex.htm'target='_blank'><div class='c_navmorediv1img'><img src='https://staticbd.yunxuetang.cn/yxt/SystemFiles/Themes/elearning30/images/appfeature/bigcircle/report_index.png'/></div><div class='c_navmorediv1p'><div class='c_navmorediv1p1'>报表中心</div><div class='c_navmorediv1p2'>统计查询各模块报表</div></div></a></div><div class='c_navmorediv1 clearfix'><a href='/jf/#/front'target='_self'><div class='c_navmorediv1img'><img src='https://staticbd.yunxuetang.cn/yxt/SystemFiles/Themes/elearning30/images/appfeature/bigcircle/jf_index.png'/></div><div class='c_navmorediv1p'><div class='c_navmorediv1p1'>积分商城</div><div class='c_navmorediv1p2'></div></div></a></div><div class='c_navmorediv1 clearfix'><a href='/talent/#/v1/index'target='_self'><div class='c_navmorediv1img'><img src='https://staticbd.yunxuetang.cn/yxt/SystemFiles/Themes/elearning30/images/appfeature/bigcircle/talent_index.png'/></div><div class='c_navmorediv1p'><div class='c_navmorediv1p1'>人才发展管理</div><div class='c_navmorediv1p2'>启用人才发展，打造企业人才发展模型</div></div></a></div><div class='c_navmorediv1 clearfix'><a href='/apps/jfmall/pointexchangeproduct.htm'target='_self'><div class='c_navmorediv1img'><img src='https://staticbd.yunxuetang.cn/yxt/SystemFiles/Themes/elearning30/images/appfeature/bigcircle/trn_pointproduct.png'/></div><div class='c_navmorediv1p'><div class='c_navmorediv1p1'>明星单品</div><div class='c_navmorediv1p2'></div></div></a></div><div class='c_navmorediv1 clearfix'><a href='/core/#/managecenter'target='_self'><div class='c_navmorediv1img'><img src='https://staticbd.yunxuetang.cn/yxt/SystemFiles/Themes/elearning30/images/appfeature/bigcircle/core_resourcemgmt.png'/></div><div class='c_navmorediv1p'><div class='c_navmorediv1p1'>管理中心</div><div class='c_navmorediv1p2'>集知识、项目、考试、平台等管理于一体</div></div></a></div></div></li>
+
+                        <div class="account" id="divaccount" >
+                            <div class="accountblick" >
+                                <span class="iconaccount">&nbsp;</span>
+                                <span title='管理员'>管理员</span>
+                            </div>
+                            <div class="accountblick1" >
+                                <span title='管理员'>管理员</span>
+                                <span class="downicon">&nbsp;</span>
+                            </div>
+                            <div class="accountpanel" id="divUserNameAreaInfo" style="min-height:457px">
+
+
+
+
+                                <Style type="text/css">
+                                    div.pageheader31 .headerbg .accounthover .accountpanel div.creditstoday span.creditnumnew {
+                                        font-size: 15px;
+                                        color: #FFFF00;
+                                    }
+                                    div.pageheader30 .headerbg .accounthover .accountpanel div.creditstoday span.creditnumnew {
+                                        font-size: 15px;
+                                        color: #FFFF00;
+                                    }
+                                </Style>
+                                <div id="divUserNameAreaInfo">
+                                    <div class="row clearfix">
+                                        <div class="creditstoday clearfix">
+                                            <div style="width: 120px; height: 65px; float: left; margin-right: 10px;">
+                                                <div style="margin-bottom: 20px;">
+                                                    <span data-localizeph="sty_lbl_todayinfo"><span>学分</span></span></div>
+                                                <a href='/study/mylearningpoingts.htm'>
+                                                    <span id="UserDayScores1" class="creditnum"></span><span id="UserDayScores2" class="creditnumdecimalpart"></span>
+                                                </a>
+                                            </div>
+                                            <div style="width: 150px; height: 65px; float: left;">
+                                                <div style="margin-bottom: 20px;">
+                                                    <label data-localize="common_lbl_todayrank"></label>积分</div>
+                                                <a href='/study/mygradeintegral.htm'>
+                                                    <span id="UserDayPoint1" class="creditnum">10</span><span id="UserDayPoint2" class="creditnumdecimalpart">.00</span>
+                                                </a>
+                                            </div>
+                                            <div class="topright" style="float: left;">
+                                                <div class="logout">
+                                                    <a href="/Logout.ashx" data-localize="kng_btn_dropout"></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row clearfix">
+                                        <div class="cumulativecredit">
+                                            <div class="cumulativetime clearfix">
+                                                <div class="timeitem"><label data-localizeph="common_lbl_thismonthpoint"><label>学分</label></label> </div>
+                                                <div class="timeitem"><label data-localizeph="common_lbl_thisyearpoint"><label>学分</label></label></div>
+                                                <div class="timeitem"><label data-localizeph="common_lbl_thisyearrequestpoint"><label>学分</label></label></div>
+                                            </div>
+                                            <div class="cumulativenum clearfix">
+                                                <div id="UserMonthScores" class="numitem"></div>
+                                                <div id="UserTotalScores" class="numitem"></div>
+                                                <div id="UserNeedScores" class="numitem yeartotal"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div id="levInfoDiv" class="row btmborder clearfix" style="border:0;">
+                                        <div class="mycurrentcredit">
+                                            <label data-localizeph="sty_lbl_myrankpoint"><label>积分</label><label><span class="totaldegreecredit UserPoint">9,618.00</span></label></label>
+                                        </div>
+                                        <div class="memberdegree">
+                                            <div id="LevelNo" class="fontnumber degreenumber">
+                                                6</div>
+                                            <div id="LevelName" class="degreename">
+                                                博士生</div>
+                                        </div>
+                                        <div class="degreerate clearfix">
+                                            <div class="ellipsis" style="width:170px;" id="dvUpGrade"><label data-localize="sty_lbl_upgrade"></label>：<span id="LearnScores" class="creditremain">3,382.00</span><span>积分</span></div>
+                                            <div class="progress">
+                                                <span class="progressbar" style=" width:15.00%">&nbsp;</span>
+                                            </div>
+                                        </div>
+                                        <div class="nextdegree" >
+                                            <div id="UpLevel" class="nextdegreenum">7</div>
+                                            <div id="UpLevelName" class="nextdegreename">博士后</div>
+                                        </div>
+                                    </div>
+
+                                    <div class="row btmborder clearfix">
+                                        <div class="msglist clearfix">
+                                            <div class="msgitem studyhistory"><a href='/apps/sty/mystudyhistoyimageinfonew.htm'>学习历史</a></div>
+                                            <div class="msgitem mycollection"><a href='/sty/myselfknowledge.htm'>我的收藏</a></div>
+                                            <div class="msgitem mytask"><a href='/sty/mystudytask.htm'>学习计划</a></div>
+                                        </div>
+                                    </div>
+                                    <div class="row btmborder clearfix">
+                                        <div class="personalset clearfix">
+                                            <div class="setitem changedata"><a href='/udp/personal/baseinfo.htm'>基本资料</a></div>
+                                            <div class="setitem changepassword" style="width: 115px;"><a href='/udp/personal/accountsecurity.htm'>账号安全</a></div>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                                <script type="text/javascript">
+                                    $(function () {
+                                        loadPropertiesForAsync("divUserNameAreaInfo");
+                                        loadDivTitle();
+                                        getUserDayScores();
+                                        getUserYearScores();
+                                    });
+
+                                    function loadDivTitle() {
+                                        try {
+                                            var chd = document.getElementById('dvUpGrade').children;
+                                            var chdTitle = "";
+                                            for (var i = 0; i < chd.length; i++) {
+                                                if (i == 1) { chdTitle += ":" }
+                                                chdTitle += chd[i].innerText;
+                                            }
+                                            jQuery("#dvUpGrade").attr("title", chdTitle);
+                                        } catch (e) { }
+                                    }
+
+                                    function getUserDayScores() {
+                                        AjaxCallApiMethod({
+                                            type: "GET",
+                                            url: "studyapi/studyhour/todayscorehours",
+                                            success: function (result) {
+                                                var r = eval("(" + result + ")");
+                                                if (r.studyScore > 999) {
+                                                    $("#UserDayScores1").text("999");
+                                                    $("#UserDayScores2").text("+");
+                                                } else if (r.studyScore < -999) {
+                                                    $("#UserDayScores1").text("999");
+                                                    $("#UserDayScores2").text("-");
+                                                }
+                                                else {
+                                                    var studyScore = r.studyScore;
+                                                    if (studyScore < 0) {
+                                                        studyScore = -studyScore;
+                                                        $("#UserDayScores1").text("-" + Math.floor(studyScore));
+                                                    }
+                                                    else {
+                                                        $("#UserDayScores1").text(Math.floor(r.studyScore));
+                                                    }
+                                                    var last = studyScore * 100 + "";
+                                                    if (last.length <= 1) {
+                                                        $("#UserDayScores2").text(".0" + last);
+                                                    }
+                                                    else {
+                                                        $("#UserDayScores2").text("." + (last).substring(last.length - 2));
+                                                    }
+                                                }
+                                            },
+                                            error: function (xhr) {
+                                            }
+                                        }, 0);
+                                    }
+
+                                    function getUserYearScores() {
+                                        AjaxCallApiMethod({
+                                            type: "GET",
+                                            url: "frw/user/info",
+                                            success: function (result) {
+                                                var r = eval("(" + result + ")");
+                                                $("#UserTotalScores").text((r.yearScores != undefined && r.yearScores != null && r.yearScores != "") ? r.yearScores : "0.00");
+                                                $("#UserMonthScores").text((r.monthScores != undefined && r.monthScores != null && r.monthScores != "") ? r.monthScores : "0.00");
+                                                $("#UserNeedScores").text((r.userNeedScores != undefined && r.userNeedScores != null && r.userNeedScores != "") ? r.userNeedScores : "0.00");
+                                            },
+                                            error: function (xhr) {
+                                                $("#UserMonthScores").text("0.00");
+                                                $("#UserTotalScores").text("0.00");
+                                                $("#UserNeedScores").text("0.00");
+                                            }
+                                        }, 0);
+                                    }
+
+                                </script>
+                            </div>
+                        </div>
+
+                        <input type="hidden" id="WaitToDoMessage" value=""/>
+                        <div class="msgarea clearfix" id="divmsgarea">
+                            <div class="info"><a href="/study/inbox.htm" target="_blank"><span id="sMail" class="iconnotic_new">&nbsp;</span></a><div class="dvnumberbg hand"><span class="number" id="lblSiteMessageCount">-</span></div> </div>
+                            <div class="noticpanel clearfix">
+                                <div id="dvNewMsgTitle" class="row fontweightbold color4">
+                                    <label data-localize='inbox_tit_latestunreadmessage'>
+                                    </label> ：</div>
+                                <div id="dvSiteMessageInfos">
+                                    <div class="row">
+                                        <div class="dataloading" style="height: 60px;">
+ <span class="loadingcontent" style="margin-top: 20px;" data-localize='sty_msg_loading'>
+ </span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="dvNewMsgBottom" class="clearfix">
+                                    <div class="showall" style="padding-right: 210px;">
+                                        <a href="/study/inbox.htm" target="_blank"
+                                           data-localize='inbox_lbl_viewall'></a>
+                                    </div>
+                                    <span class="iconread"><a href="#" onclick="UpdateIsReadByUserID();" data-localize='inbox_lbl_markallread'>
+ </a></span>
+                                </div>
+                            </div>
+                        </div>
+                        <script type="text/javascript">
+                            var msgCount = 0;
+                            $(document).ready(function () {
+                                loadPropertiesForAsync("onlinestartwarm");
+                                loadPropertiesForAsync("onlineendwarm");
+
+                                var s = "0|0";
+                                var str = s.indexOf("|");
+                                if (str != -1) {
+                                    var str2 = s.split("|");
+                                    msgCount = str2[0];
+                                    if (str2[0] > 99) {
+                                        $("#lblSiteMessageCount").text('99+');
+                                    } else {
+                                        $("#lblSiteMessageCount").text(str2[0]);
+                                    }
+                                }
+                                $("#divmsgarea").on("mouseenter", function () { showSiteMsgInfos($("#divmsgarea"), 'msgarea') });
+                                $("#divaccount").on("mouseenter", function () { changeHoverStyleForHidDiv($("#divaccount"), 'account') });
+                                //加载站内信信息
+                                //InitMsgInfo();
+                                //获取通知数量
+                                var GetCountmethodName = 'GetWaitHandleMessageForNew';
+                                var arr = {};
+                                AjaxAsyncCallMethod(GetCountmethodName, "",
+                                    function (result) {
+                                        var str = result.split("&");
+                                        if (str.length == 2) {
+                                            jQuery("#lblNoticCount").html(str[0]);
+                                            document.getElementById("WaitToDoMessage").value = str[1];
+
+                                            //控制待办事项闪烁
+                                            var isShiny = "False";
+                                            if (isShiny != "True") {
+                                                if (str[0] > 0) {
+                                                    //待办图标闪烁
+                                                    $("#sWait").attr("class", "iconnotic_active");
+                                                }
+                                            }
+                                            else {
+                                                if (str[0] > 0) {
+                                                    var a = str[1].indexOf("@");
+                                                    var str2 = str[1].substring(a + 1);
+                                                    if (str2 > 0) {
+                                                        var addCount = str[0] - str2;
+                                                        if (addCount >= 1) {
+                                                            $("#sWait").attr("class", "iconnotic_active");
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                            //控制站内信图标闪烁
+                                            var isMail = "False";
+                                            if (isMail != "True") {
+                                                if (0|0 > 0) {
+                                                    //站内信图标闪烁
+                                                    $("#sMail").attr("class", "iconnotic_active");
+                                                }
+                                            }
+                                            else {
+                                                var s = "0|0";
+                                                var str = s.indexOf("|");
+                                                if (str != -1) {
+                                                    var str2 = s.split("|");
+                                                    if (str2[0] > 99) {
+                                                        $("#lblSiteMessageCount").text('99+');
+                                                    } else {
+                                                        $("#lblSiteMessageCount").text(str2[0]);
+                                                    }
+                                                    var addCount = str2[0] - str2[1];
+                                                    if (addCount >= 1) {
+                                                        $("#sMail").attr("class", "iconnotic_active");
+                                                    }
+                                                    else {
+                                                        var s1 = "0|0";
+                                                        var str1 = s1.indexOf("|");
+                                                        if (str1 != -1) {
+                                                            var str21 = s1.split("|");
+                                                            if (str21[0] > 99) {
+                                                                $("#lblSiteMessageCount").text('99+');
+                                                            } else {
+                                                                $("#lblSiteMessageCount").text(str21[0]);
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }, true, true, false);
+                                setTimeout("ShowPromptMessage() ", 5000);
+                            });
+
+
+                            //执行知识搜索
+                            function doKnowledgeSearch() {
+                                var txt = new RegExp("[\\`,\\~,\\!,\\@,\\$,\\%,\\^,\\+,\\*,\\&,\\,\\/,\\?,\\|,\\:,\\<,\\>,\\{,\\},\\(,\\),\\',\\;,\\=,\"]");
+                                var url = "";
+                                var kw = jQuery.trim(jQuery("#txtKeyword").val());
+                                if (kw == "请输入关键字" || kw == "") {
+                                    showWarningMsg("请输入要查找的关键字。");
+                                    return false;
+                                }
+                                else if (kw.length < 2) {
+                                    showWarningMsg("输入的关键字需超过一个字，请确认您输入的查询关键字。");
+                                    return false;
+                                }
+                                else if (kw.length > 30) {
+                                    showWarningMsg("输入的关键字最多允许30个字符，请确认您输入的查询关键字。");
+                                    return false;
+                                }
+                                else if (txt.test(kw)) {
+                                    showWarningMsg("输入的关键字中包含非法字符:,`~!@$%^+&*\\/?|:<>{}()[]\"。");
+                                    return false;
+                                }
+                                else {
+                                    url = "/nsearch/#/index?kw=" + escape(kw);
+                                }
+
+                                window.location = url;
+                            }
+
+                            //回车后直接搜索
+                            function enterToSearch() {
+
+                                if (event.keyCode == 13) {
+                                    event.keyCode = 9;
+                                    document.getElementById("btnKnowledgeSearch").click();
+                                    return false;
+                                }
+
+                            }
+
+                            function ShowPromptMessage() {
+                                jQuery("#MsgTitle").html("");
+                                // var arr = '{}';
+                                // jQuery.ajax({
+                                // type: "POST",
+                                // contentType: "text/json",
+                                // url: "/Services/CommonService.svc/GetShowPromptMessage",
+                                // data: arr,
+                                // dataType: 'json',
+                                // cache: false,
+                                // success: function (result) {
+                                // if (result != null) {
+                                // var str = result.split("|");
+                                // if (str.length == 2) {
+                                // if (str[0] != "0") {
+                                // if (str[1] != "0") {
+                                // var vr = "<span><a href='" + str[1] + "'>亲，您有一个新消息到达！</a></span><p><a href='" + str[1] + "'>" + str[0] + "<span>点击查看>></span></a></p>"
+                                // jQuery("#MsgTitle").html(vr);
+                                // }
+                                // else {
+                                // var vr = "<span>亲，您有一个新消息到达！</span><p>" + str[0] + "<span></span></p>"
+                                // jQuery("#MsgTitle").html(vr);
+                                // }
+                                // jQuery("#ShowMessage").css("bottom", "0px").css("right", "0px").slideToggle("slow");
+                                // }
+                                // }
+                                // }
+                                // else {
+                                // jQuery("#MsgTitle").html("");
+                                // }
+                                // }
+                                // });
+                            }
+
+                            function SetRemindTime(sender) {
+                                var flag = "y";
+                                if (jQuery(sender).prop("checked")) {
+                                    //设置一周不提醒
+                                } else {
+                                    //取消设置提醒
+                                    flag = "n";
+                                }
+                                var arr = '{"flag":"' + flag + '"}';
+                                jQuery.ajax({
+                                    type: "POST",
+                                    contentType: "text/json",
+                                    url: "/Services/MyIndexService.svc/SetRemindTime",
+                                    data: arr,
+                                    dataType: 'json',
+                                    cache: false,
+                                    success: function (result) {
+                                        if (result != "ok") {
+                                            ShowWarningMessage("设置失败。");
+                                        }
+                                    }
+                                });
+                            }
+
+                            function CloseShowMessage() {
+                                jQuery("#ShowMessage").hide();
+                                setTimeout("ShowPromptMessage() ", 5000);
+                            }
+
+                            function InitMsgInfo() {
+                                t = 1;
+                                // 异步去取数据
+                                var methodName = 'GetUserSiteMessage';
+                                var txtType = 'SiteMessage';
+                                var arr = '{"type":"' + txtType + '"}';
+                                AjaxAsyncCallMethod(methodName, arr,
+                                    function (result) {
+                                        var obResult = eval("(" + result + ")");
+                                        var dvSiteMessageInfos = jQuery("#dvSiteMessageInfos");
+                                        loadNoticData(dvSiteMessageInfos, obResult);
+
+                                    }, true, true, true);
+                            }
+
+                            var t = 0;
+                            var tmrShowSiteMsgInfos = null;
+                            function showSiteMsgInfos(sender, className) {
+                                if (t == 0) {
+                                    InitMsgInfo();
+                                }
+                                if (tmrShowSiteMsgInfos) {
+                                    window.clearTimeout(tmrShowSiteMsgInfos);
+                                }
+                                jQuery(sender).attr("class", className + "hover");
+
+                                jQuery(sender).on("mouseleave", function () {
+                                    tmrShowSiteMsgInfos = window.setTimeout(function () {
+                                        jQuery(sender).attr("class", className);
+                                    }, 500);
+                                });
+
+
+                                //站内信图标闪烁用
+                                var txtType01 = 'SiteMessageForMailIco';
+                                var arr01 = '{"key":"' + txtType01 + '"}';
+                                //异步保存Session
+                                jQuery.ajax({
+                                    type: "POST",
+                                    contentType: "text/json",
+                                    url: "/Services/MyIndexService.svc/SaveSessionLoginStringForMailIco",
+                                    data: arr01,
+                                    dataType: 'json',
+                                    cache: false,
+                                    success: function (result) {
+                                        if (result == "ok") {
+                                            $("#sMail").attr("class", "iconnotic_new");
+                                        }
+                                    }
+                                });
+                            }
+
+
+                            //鼠标移上去显示
+                            function divMousehover(sender) {
+                                jQuery(sender).find(".timer").hide();
+                                jQuery(sender).find(".timer1").show();
+                                jQuery(sender).one("mouseout", function () {
+                                    jQuery(this).find(".timer").show();
+                                    jQuery(this).find(".timer1").hide();
+                                });
+                            }
+
+                            //异步把收件箱中未读的消息全部设置为已读
+                            //创建人：张林
+                            //时间：2014年5月27日12:54:05
+                            function UpdateIsReadByUserID() {
+                                var methodName = 'UpdateIsReadByUserID';
+                                arr = {};
+                                AjaxAsyncCallMethod(methodName, arr,
+                                    function (result) {
+                                        var obResult = "";
+                                        if (result > 0) {
+                                            clearAllMsg();
+                                        }
+                                    }, false, true, true);
+                            }
+
+                            //全部标记已读后清空JS
+                            function clearAllMsg() {
+                                var dvSiteMessageInfos = jQuery("#dvSiteMessageInfos");
+                                var lblSiteMessageCount = jQuery("#lblSiteMessageCount");
+                                var dvNewMsgTitle = jQuery("#dvNewMsgTitle");
+                                divHtml = '<div class="emptyusermsg"></div><div class="emptyusertext" data-localize="sys_msg_noreceivemsg"></div>';
+                                dvSiteMessageInfos.html(divHtml);
+                                lblSiteMessageCount.html("0");
+                                dvNewMsgTitle.html("");
+                            }
+
+                            //单个删除后数量减1JS
+                            function clearOneMsg() {
+                                divHtml = '<div class="emptyusermsg"></div><div class="emptyusertext" data-localize="sys_msg_noreceivemsg"></div>';
+                                var dvSiteMessageInfos = jQuery("#dvSiteMessageInfos");
+                                var dvNewMsgTitle = jQuery("#dvNewMsgTitle");
+                                var lblSiteMessageCount = jQuery("#lblSiteMessageCount");
+                                if (msgCount > 0) {
+                                    msgCount = msgCount - 1;
+                                    if (msgCount > 99) {
+                                        lblSiteMessageCount.html('99+');
+                                    }
+                                    else {
+                                        lblSiteMessageCount.html(msgCount);
+                                    }
+                                }
+                                else {
+                                    dvSiteMessageInfos.html(divHtml);
+                                    lblSiteMessageCount.html("0");
+                                    dvNewMsgTitle.html("");
+                                }
+                            }
+
+                            function loadMsgInfo1() {
+                                // 异步去取数据
+                                var methodName = 'GetUserSingSiteMessage';
+                                var txtType = 'SiteMessage';
+                                var arr = '{"type":"' + txtType + '"}';
+                                AjaxAsyncCallMethod(methodName, arr,
+                                    function (result) {
+                                        if (result == "") {
+                                            loadNoticData1(dvSiteMessageInfos, "");
+                                        }
+                                        else {
+                                            var obResult = eval("(" + result + ")");
+                                            var dvSiteMessageInfos = jQuery("#dvSiteMessageInfos");
+                                            loadNoticData1(dvSiteMessageInfos, obResult[0]);
+                                        }
+                                    }, false, true, true);
+                            }
+
+                            //异步删除收件箱中的消息
+                            //创建人：张林
+                            //时间：2014年5月27日15:12:03
+                            function DeleteInboxMsg1(key, divId) {
+                                var methodName = 'DeleteInboxMsg';
+                                var arr = '{"key":"' + key + '"}';
+                                AjaxAsyncCallMethod(methodName, arr,
+                                    function (result) {
+                                        if (result > 0) {
+                                            jQuery('#' + divId).hide();
+                                            clearOneMsg();
+                                            InitMsgInfo();
+                                        }
+                                    }, false, true, true);
+                            }
+
+                            function loadNoticData(dv, obResult) {
+                                var divHtml = '';
+                                for (var i = 0; i < obResult.length; i++) {
+                                    divHtml += "<div id='div_" + obResult[i].ID + "' class='row clearfix' onmouseover='divMousehover(this);'><div class='floatleft' title='" + obResult[i].Title + "'><span class='iconpointpp2'>&nbsp;</span><a href='javascript:ShowMessageDetails(\"" + obResult[i].ID + "\");' >" + subStr(obResult[i].Title, 26) + "</a></div><div class='floatright color5 timer'>" + obResult[i].CreateTime + "</div><div class='floatright timer1 hiddenelement'><a href='javascript:UpdateInboxMsgIsRead(\"" + obResult[i].ID + "\",\"div_" + obResult[i].ID + "\");'>" + jQuery.i18n.map['inbox_lbl_markasread'] + "</a>&nbsp;&nbsp;&nbsp;<a href='javascript:DeleteInboxMsg1(\"" + obResult[i].ID + "\",\"div_" + obResult[i].ID + "\");'>" + jQuery.i18n.map['common_lbl_delete'] + "</a></div></div>";
+                                }
+                                if (divHtml == '') {
+                                    jQuery("#dvNewMsgTitle").hide();
+                                    divHtml = '<div class="emptyusermsg"></div><div class="emptyusertext" data-localize="sys_msg_noreceivemsg"></div>';
+                                } jQuery(dv).html(divHtml);
+                            }
+
+                            function loadNoticData1(dv, obResult) {
+                                var divHtml = '';
+                                if (obResult) {
+                                    divHtml += "<div id='div_" + obResult.ID + "' class='row clearfix' onmouseover='divMousehover(this);'><div class='floatleft' title='" + obResult.Title + "'><span class='iconpointpp2'>&nbsp;</span><a href='javascript:ShowMessageDetails(\"" + obResult.ID + "\");' >" + subStr(obResult.Title, 26) + "</a></div><div class='floatright color5 timer'>" + obResult.CreateTime + "</div><div class='floatright timer1 hiddenelement'><a href='javascript:UpdateInboxMsgIsRead(\"" + obResult.ID + "\",\"div_" + obResult.ID + "\");'>" + jQuery.i18n.map['inbox_lbl_markasread'] + "</a>&nbsp;&nbsp;&nbsp;<a href='javascript:DeleteInboxMsg1(\"" + obResult.ID + "\",\"div_" + obResult.ID + "\");'>" + jQuery.i18n.map['common_lbl_delete'] + "</a></div></div>";
+                                    if (divHtml == '') {
+                                        jQuery("#dvNewMsgTitle").hide();
+                                        divHtml = '<div class="emptyusermsg"></div><div class="emptyusertext" data-localize="sys_msg_noreceivemsg"></div>';
+                                    }
+                                    jQuery(dv).append(divHtml);
+                                }
+                            }
+
+                            //更新收件箱消息为已读
+                            //创建人：张林
+                            //时间：2014年5月27日15:35:21
+                            function UpdateInboxMsgIsRead(key, divId) {
+                                var methodName = 'UpdateInboxMsgIsRead';
+                                var arr = '{"key":"' + key + '"}';
+                                AjaxAsyncCallMethod(methodName, arr,
+                                    function (result) {
+                                        if (result > 0) {
+                                            jQuery('#' + divId).hide();
+                                            clearOneMsg();
+                                            InitMsgInfo();
+                                        }
+                                    }, false, true, true);
+                            }
+
+                            function subStr(txt, index) {
+                                var txtSub = txt;
+                                if (index > 0 && txt.length > 26) {
+                                    txtSub = txt.substring(0, 26) + "...";
+                                }
+                                return txtSub;
+                            }
+
+                            function ShowMessageDetails(id) {
+                                var url = "/message/messagedetail.htm";
+                                if (url.indexOf("?") > -1) {
+                                    url += "&";
+                                }
+                                else {
+                                    url += "?";
+                                }
+                                window.location.href = url + 'ID=' + id + '&OP=Edit&MsgSourceType=InBox';
+                            }
+
+                            //用户账号信息
+                            function changeHoverStyleForHidDiv(sender, className) {
+                                if (tmrShowSiteMsgInfos) {
+                                    window.clearTimeout(tmrShowSiteMsgInfos);
+                                }
+                                jQuery(".msgareahover").attr("class", "msgarea");
+                                jQuery(sender).attr("class", className + "hover");
+                                //异步去取用户账户相关信息
+                                var methodName = 'GetUserClassLevelInfo';
+                                arr = {};
+                                AjaxAsyncCallMethod(methodName, arr,
+                                    function (result) {
+                                        var obResult = eval("(" + result + ")");
+                                        var dvAccountTeacher = jQuery("#dvAccountTeacher");
+                                        // 抓到数据后
+                                        loadTeacherData(dvAccountTeacher, obResult);
+                                    }, false, true, true);
+                                jQuery(sender).on("mouseleave", function () {
+                                    jQuery(this).attr("class", className);
+                                });
+                            }
+
+                            //动态加载到页面
+                            function loadTeacherData(dv, obResult) {
+                                var divHtml = "";
+                                if (obResult != null) {
+                                    divHtml = "<div class='pic'><img alt=" + obResult[0].CnName + " src=" + obResult[0].HeadPictureUrl + "></div><div class='info'><div class='row color3'>" + obResult[0].CnName + "<span class='color5'>&nbsp;" + obResult[0].UserName + "</span></div><div class='row color4 '><img alt=" + obResult[0].UserClassLevelName + " src=" + obResult[0].UserClassLevelImageUrl + " height='9'>&nbsp;&nbsp;" + obResult[0].UserClassLevelName + "</div><div class='row'><span class='color5'>" + obResult[0].AttentionCount + "</span>&nbsp;<span class='color4'>个关注</span>&nbsp;&nbsp;&nbsp;&nbsp;<span style='color:#BBBBBB;'>|&nbsp;&nbsp;</span><span class='color5'>" + obResult[0].FansCount + "</span>&nbsp;<span class='color4'>个粉丝</span>&nbsp;&nbsp;&nbsp;&nbsp;<span style='color:#BBBBBB;'>|&nbsp;&nbsp;</span><span class='color5'>" + obResult[0].TotalUserPoints + "</span>&nbsp;<span class='color4'>个积分</span></div></div>";
+                                }
+                                jQuery(dv).html(divHtml);
+                            }
+
+                        </script>
+                        <div class="stayarea clearfix">
+                            <div class="info">
+                                <span id="sWait" class="iconnotic_new" onclick="showEventWaitHandlePanel('1')">&nbsp;</span></div>
+                            <div class="dvnumberbg hand" onclick="showEventWaitHandlePanel('1')">
+                                <span class="number3" id="lblNoticCount">-</span>
+                            </div>
+                        </div>
+                        <li class="rightround"></li>
+                    </ul>
+                </div>
+                <script type="text/javascript">
+                    function showMoreMenu(sender) {
+                        var l = jQuery(sender).find(".blockmore .c_navmorediv1").length;
+                        var w = 0;
+                        if (l == 1) {
+                            r = 0;
+                        }
+
+                        if (l == 3 || l == 4 || l == 2) {
+                            r = -270;
+                        }
+
+                        if (l > 4) {
+                            w = 895;
+                            r = -220;
+                        }
+                        else if (l == 1) {
+                            r = -146;
+                            w = l * 220;
+                        }
+                        else {
+                            w = l * 222;
+                        }
+
+                        jQuery(sender).find(".blockmore").css("width", w + "px").css("right", r + "px");
+                        jQuery(sender).attr('class', 'morehover');
+                    }
+                    function hideMoreMenu(sender) {
+                        jQuery(sender).attr('class', 'more');
+                    }
+
+                </script>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script type="text/javascript">
+        $(function () {
+            var value = getCookie("XXTOWN_COOKIE_00014");
+            if (value == null || value == "undefined") {
+                value = "";
+            }
+            var isShow = value.indexOf("rolechangearea") < 0;
+            if (isShow) {
+                $("#rolechange").show();
+            }
+            else {
+                $("#rolechange").attr("class", "rolechange_hidden");
+                $("#rolechange").show();
+            }
+        });
+        function changeRoleChangeView(sender) {
+            var dvRoleChange = $(sender).parent();
+            if (dvRoleChange.attr("class") == "rolechange") {
+                // 隐藏
+                dvRoleChange.attr("class", "rolechange_hidden");
+                var value = getCookie("XXTOWN_COOKIE_00014");
+                if (value == null || value == "undefined") {
+                    value = "";
+                }
+                value += "rolechangearea-";
+                addCookie("XXTOWN_COOKIE_00014", value, 9999);
+            }
+            else {
+                // 呈现
+                dvRoleChange.attr("class", "rolechange");
+                var value = getCookie("XXTOWN_COOKIE_00014");
+                if (value == null || value == "undefined") {
+                    value = "";
+                }
+                value = value.replace("rolechangearea-", "");
+                addCookie("XXTOWN_COOKIE_00014", value, 9999);
+            }
+        }
+    </script>
+
+
+
+
+    <div class="y-container1 bg-white clearfix">
+
+
+
+
+
+
+
+
+        <div class="box-part border-default">
+
+            <div class="aside-left-menu" style="height: 1009px">
+
+                <div class="content-top-bar ellipsis" title="资源管理">
+                    资源管理</div>
+                <ul class="aside-menu-list">
+                    <li class="menu-title hand" onclick="showThismenu(this,'kng_baseinfos')" title ="在线知识库">在线知识库<span
+                            class="fa fa-angle-up pull-right font-size-24 mt7"></span></li>
+                    <li class="active kng_baseinfos" ><a href="/kng/kngcatalog/kngcatalogmgmt.htm"
+                                                         target="_self">
+                        <span class="new-iconfont nicon-tubiao3wodemulu v-mid" ></span><span
+                            class="v-top ml15" title ="目录维护">目录维护</span></a></li>
+                    <li class=" kng_baseinfos" ><a href="/kng/kngmgmt/kngknowledgemgmt.htm"
+                                                   target="_self">
+                        <span class="new-iconfont nicon-shujuweihu v-mid" ></span><span
+                            class="v-top ml15" title ="知识管理">知识管理</span></a></li>
+                    <li class=" kng_baseinfos" ><a href="/kng/kngtags/knowledgetagsmgmt.htm"
+                                                   target="_self">
+                        <span class="new-iconfont nicon-biaoqian v-mid" ></span><span
+                            class="v-top ml15" title ="知识标签">知识标签</span></a></li>
+                    <li class=" kng_baseinfos" ><a href="/kng/trn/buyedcourse.htm"
+                                                   target="_self">
+                        <span class="new-iconfont nicon-goumai v-mid" ></span><span
+                            class="v-top ml15" title ="购课管理">购课管理</span></a></li>
+                    <li class=" kng_baseinfos" ><a href="/kng/mgm/orgparmatesetting.htm"
+                                                   target="_blank">
+                        <span class="new-iconfont nicon-chanpincanshu v-mid" ></span><span
+                            class="v-top ml15" title ="高级设置">高级设置</span></a></li>
+                    <li class=" kng_baseinfos" ><a href="/apps/kng/xuankemanage.htm"
+                                                   target="_self">
+                        <span class="new-iconfont nicon-kechengxiangxi v-mid" ></span><span
+                            class="v-top ml15" title ="微课管理">微课管理</span></a></li>
+                    <li class=" kng_baseinfos" ><a href="/sc/linkmgmt.htm"
+                                                   target="_self">
+                        <span class="new-iconfont nicon-content v-mid" ></span><span
+                            class="v-top ml15" title ="内容管理">内容管理</span></a></li>
+                    <li class="menu-title hand" onclick="showThismenu(this,'kng_offline')" title ="线下课程">线下课程<span
+                            class="fa fa-angle-up pull-right font-size-24 mt7"></span></li>
+                    <li class=" kng_offline" ><a href="/o2o/demand/demandlst.htm"
+                                                 target="_self">
+                        <span class="new-iconfont nicon-need v-mid" ></span><span
+                            class="v-top ml15" title ="培训需求">培训需求</span></a></li>
+                    <li class=" kng_offline" ><a href="/o2o/trainplan/trainplanmgmt.htm"
+                                                 target="_self">
+                        <span class="new-iconfont nicon-trainplan v-mid" ></span><span
+                            class="v-top ml15" title ="培训计划">培训计划</span></a></li>
+                    <li class=" kng_offline" ><a href="/o2o/coursemgmt.htm"
+                                                 target="_self">
+                        <span class="new-iconfont nicon-course-source v-mid" ></span><span
+                            class="v-top ml15" title ="课程资源">课程资源</span></a></li>
+                    <li class="menu-title hand" onclick="showThismenu(this,'ojt_schemetemplate')" title ="方案模板">方案模板<span
+                            class="fa fa-angle-up pull-right font-size-24 mt7"></span></li>
+                    <li class=" ojt_schemetemplate" ><a href="/o2o/question/questionlst.htm"
+                                                        target="_self">
+                        <span class="new-iconfont nicon-info v-mid" ></span><span
+                            class="v-top ml15" title ="问卷模板">问卷模板</span></a></li>
+                    <li class=" ojt_schemetemplate" ><a href="/ojt/practicalopermgmt.htm"
+                                                        target="_self">
+                        <span class="new-iconfont nicon-templet v-mid" ></span><span
+                            class="v-top ml15" title ="实操模板">实操模板</span></a></li>
+                    <li class=" ojt_schemetemplate" ><a href="/o2o/traintemplate/traintemplatemgmt.htm"
+                                                        target="_self">
+                        <span class="new-iconfont nicon-inner-template v-mid" ></span><span
+                            class="v-top ml15" title ="内训模板">内训模板</span></a></li>
+                    <li class=" ojt_schemetemplate" ><a href="/mit/template/templatemgmt.htm"
+                                                        target="_self">
+                        <span class="new-iconfont nicon-template v-mid" ></span><span
+                            class="v-top ml15" title ="O2O模板">O2O模板</span></a></li>
+                    <li class=" ojt_schemetemplate" ><a href="/ojt/templatelist.htm"
+                                                        target="_self">
+                        <span class="new-iconfont nicon-ojttemplet v-mid" ></span><span
+                            class="v-top ml15" title ="OJT模板">OJT模板</span></a></li>
+                    <li class="menu-title hand" onclick="showThismenu(this,'te_teacherinfo')" title ="企业讲师">企业讲师<span
+                            class="fa fa-angle-up pull-right font-size-24 mt7"></span></li>
+                    <li class=" te_teacherinfo" ><a href="/o2o/teacher/telist.htm"
+                                                    target="_self">
+                        <span class="new-iconfont nicon-contacts-book v-mid" ></span><span
+                            class="v-top ml15" title ="企业讲师">企业讲师</span></a></li>
+                    <li class=" te_teacherinfo" ><a href="/o2o/teacher/teaudit.htm"
+                                                    target="_self">
+                        <span class="new-iconfont nicon-examine v-mid" ></span><span
+                            class="v-top ml15" title ="讲师年审">讲师年审</span></a></li>
+                    <li class=" te_teacherinfo" ><a href="/o2o/teacher/teconfig.htm"
+                                                    target="_self">
+                        <span class="new-iconfont nicon-setting v-mid" ></span><span
+                            class="v-top ml15" title ="讲师参数">讲师参数</span></a></li>
+                    <li class="menu-title hand" onclick="showThismenu(this,'pro_testtrack')" title ="考试资源">考试资源<span
+                            class="fa fa-angle-up pull-right font-size-24 mt7"></span></li>
+                    <li class=" pro_testtrack" ><a href="/exam/exams/exammgmt.htm"
+                                                   target="_self">
+                        <span class="new-iconfont nicon-survey v-mid" ></span><span
+                            class="v-top ml15" title ="试卷库">试卷库</span></a></li>
+                    <li class=" pro_testtrack" ><a href="/exam/exams/examauditmgmt.htm"
+                                                   target="_self">
+                        <span class="new-iconfont nicon-testanalyse v-mid" ></span><span
+                            class="v-top ml15" title ="试卷审核">试卷审核</span></a></li>
+                    <li class=" pro_testtrack" ><a href="/exam/games/gamesmgmt.htm"
+                                                   target="_self">
+                        <span class="new-iconfont nicon-gamemanage v-mid" ></span><span
+                            class="v-top ml15" title ="游戏管理">游戏管理</span></a></li>
+                    <li class=" pro_testtrack" ><a href="/exam/questionlib/questionlibmgmt.htm"
+                                                   target="_self">
+                        <span class="new-iconfont nicon-zhanghuweihu v-mid" ></span><span
+                            class="v-top ml15" title ="试题库">试题库</span></a></li>
+                    <li class=" pro_testtrack" ><a href="/exam/questionlib/questionconfirmmgmt.htm"
+                                                   target="_self">
+                        <span class="new-iconfont nicon-review v-mid" ></span><span
+                            class="v-top ml15" title ="试题审核">试题审核</span></a></li>
+                    <li class=" pro_testtrack" ><a href="/exam/examconfig.htm"
+                                                   target="_self">
+                        <span class="new-iconfont nicon-setting v-mid" ></span><span
+                            class="v-top ml15" title ="参数设置">参数设置</span></a></li>
+                    <li class="menu-title hand" onclick="showThismenu(this,'ojt_tutors')" title ="导师管理">导师管理<span
+                            class="fa fa-angle-up pull-right font-size-24 mt7"></span></li>
+                    <li class=" ojt_tutors" ><a href="/ojt/tutormgmt.htm"
+                                                target="_self">
+                        <span class="new-iconfont nicon-teacher1 v-mid" ></span><span
+                            class="v-top ml15" title ="导师管理">导师管理</span></a></li>
+                    <li class="menu-title hand" onclick="showThismenu(this,'exam_games')" title ="超级大脑">超级大脑<span
+                            class="fa fa-angle-up pull-right font-size-24 mt7"></span></li>
+                    <li class=" exam_games" ><a href="/exam/games/gamestageinfomgmt.htm"
+                                                target="_self">
+                        <span class="new-iconfont nicon-chuangguanyouxi v-mid" ></span><span
+                            class="v-top ml15" title ="闯关游戏">闯关游戏</span></a></li>
+                    <li class="menu-title hand" onclick="showThismenu(this,'certificatemanagement')" title ="培训证书">培训证书<span
+                            class="fa fa-angle-up pull-right font-size-24 mt7"></span></li>
+                    <li class=" certificatemanagement" ><a href="/o2o/certificate/certificateissuemgmt.htm"
+                                                           target="_self">
+                        <span class="new-iconfont nicon-zhengshu v-mid" ></span><span
+                            class="v-top ml15" title ="证书管理">证书管理</span></a></li>
+                    <li class=" certificatemanagement" ><a href="/o2o/certificate/certificatequery.htm"
+                                                           target="_self">
+                        <span class="new-iconfont nicon-certificate-search v-mid" ></span><span
+                            class="v-top ml15" title ="证书查询">证书查询</span></a></li>
+                </ul>
+                <script type="text/javascript">
+                    //展开收起
+                    function showThismenu(obj, name) {
+                        if ($(obj).find('span:last').hasClass("fa-angle-up")) {
+                            $('.' + name).hide();
+                            $(obj).find('span:last').removeClass("fa-angle-up");
+                            $(obj).find('span:last').addClass("fa-angle-down");
+                            SetNavCookie(name, 1);
+                        }
+                        else {
+                            $('.' + name).show();
+                            $(obj).find('span:last').removeClass("fa-angle-down");
+                            $(obj).find('span:last').addClass("fa-angle-up");
+                            SetNavCookie(name, 2);
+                        }
+                    }
+
+                    function SetNavCookie(name, type) {
+                        var arr = '{"name":"' + name + '","type":' + type + '}';
+                        jQuery.ajax({
+                            type: "POST",
+                            contentType: "text/json",
+                            url: "/Services/CommonService.svc/SetNavCookie",
+                            data: arr,
+                            dataType: 'json',
+                            cache: false,
+                            success: function (msgResult) {
+
+                            },
+                            error: function (xmlHttpRequest, error) {
+
+                            }
+                        });
+
+                    }
+                </script>
+
+            </div>
+            <form method="post" action="/kng/kngcatalog/kngcatalogmgmt.htm" id="form1" onkeydown="if(event.keyCode==13){return false;}">
+                <div class="aspNetHidden">
+                    <input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="" />
+                    <input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="" />
+                    <input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="ooUQQLbJLx1dXI7+B8IiJKwpLOCATBvaBaiGT1E2abZxnGPM8oQXQfghD4guhEX4u755jx4NUsrPnOM0iRa3ownetiySyW3g3DnM1AEzYg0jkEMD1tv6DhaEUXE5kRJJ2KsJpHckCKhZFXeKBPfV6nHGRomudjkHdia7LoR/2kwTIWF+pwZeVsuFSdMHgKXCPKiQl4dN+hx7jeO7AXopdKXUX5bK9gQK+fRivpnShZyiEVqlzeKR40Li85tybc6AM9uC4kZZcRUYN8i4EyzsoxacY3oFxipQPWFE5KNay/l9INsxOxrNHJOqSNSSF6xlCHOrooJV3+/zBVh+s+vNylP5pRJX0ouyrUniAn9yGa5pOcOrYkVb5MU2e/1Fk2HXiylaJ0LdFDDC2RLM2qIWntPuyGzxPjNFYzwOX8X9oAnbP1TxnX5c+KKLN2Ua4mzNSz5VOKhWWbwlmZWNZsSykm4wAyh9C0Ue02l6csxxFqzsoW7sUf0IMcpNlQyiqe33acifVtoAtVrRQv5YSzYBav7KQUQL7WkPImQ7mSQaPvMoljHdb9HN9FH8vT/hUvst3dcbLbGYN9jaXk1Sl0fe4jk3HPAvQGkOnxj5UfFVDYdQNE8FNEFz0bqa5fnbBRJEvxfpdt6FZkGtDCRH3FdlbA4fUzJLHa7Ao2co9UfWwvcgJiji5tzZ2KQCUO0Azt2eAsmWEYyCI/qGGHJOzVMkqbh22AmE0X31kGWSq94zgxvTyPD36TgrgaTBU/neUsweljyrmuqE2PDn8xDc820QB4OXevnN1F4ZzyBA6aanGrrnH6vsvLK8bsd/w+Ggh2xZlbL9YFXLUYcWVCk75GWF33JadYtzI8ZhiMI9DOmWItQGSPa4cLnEMs5KWji78Z80teL26YCSvrQ/2kk1d647xAmfEw6f/HFLnqE/oB79GQY0tAdDsOcD/njlEoRcCQQvapXTX9k30ab3iJmXKdL8by3+LsFA4CAO1y45vVAPIGCjTDUs9u+NNwE53S/okfcr0zdnrzbsdC3JZjVOdsO08VTOyKK5Kj1Ya2bTpPqAwCaT2gfvcU3d71Lh81NTi5CXY444bNyLQIoU6xozfaJixWk+3KMpDm/DLWBSu+pZ21gDXkbxJd6bbr3apIdzTAfBeUfwo77HDzQ9uFeeeIrN53oyDImN4bfRA/MrUUqr2qYbC3ABqUpbRcK7qxW76DfFp3VtQP+cgqSj1EXNDWN/dOGs/WQDRWsxYxLOCLtQPLTPgSGHyfkxBwSLM5UxVSupX6aTOc7XO9AJxGoE5iGw11WedmgtPthNIIQ1DCtHXBQPZXHteIgjyi0uxtGHuuG3vCrWBk9OeriaqdjD+yLoxZipsfzx9vCvpcu2iWGULa4PiPyI+/ttYDomaKn1/T6ySO8Fzg==" />
+                </div>
+
+                <script type="text/javascript">
+                    //<![CDATA[
+                    var theForm = document.forms['form1'];
+                    if (!theForm) {
+                        theForm = document.form1;
+                    }
+                    function __doPostBack(eventTarget, eventArgument) {
+                        if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+                            theForm.__EVENTTARGET.value = eventTarget;
+                            theForm.__EVENTARGUMENT.value = eventArgument;
+                            theForm.submit();
+                        }
+                    }
+                    //]]>
+                </script>
+
+
+                <script src="/WebResource.axd?d=Ac9eIvTF3wgLUR8jOWXkLAk4W5fQhG-DBIEe_sDtj3UtMYrGpN7ozJXBs0Bpwz_GzfayC7jCqbZgh36O0&amp;t=636765175280000000" type="text/javascript"></script>
+
+
+                <script type='text/javascript'>
+                    function getOption_pageNav(obj){
+                        var selectedValue = obj;
+                        var hidObject = document.getElementById('pageNav');
+                        if(hidObject){
+                            hidObject.value = '1|0|'+selectedValue;
+                        }
+                        return selectedValue;
+                    }</script><script language='javascript'>try {loadProperties('zh','kng');  }catch (e) {}</script>
+                <script src="/ScriptResource.axd?d=YXu7iQBXIAzRHtw3GIaEDlgDJcZXk8FxYKYzh6UP9Gm1fjEC3VgxYP4T_7XK2HnsmaoE7Li9OEX1CySgRP7Vd3wJ7jLxYUP3WXHF_wc5inFb-_22A5UrUL45vcMS8vGcgNCPJsw77f3udCBUKigBOLmHnDKKzXPsXTbqzg2&amp;t=ffffffff999c3159" type="text/javascript"></script>
+                <script src="/ScriptResource.axd?d=ySua5zrWulKd0Lx_1NqIEyMYD_UcQz3AGOrnN2U9LjgZIw5vJUW_q-gpnIeWrR7bHmb_BQYO0sLXxU4sv0UFM5i4q5xSaslJNIdJhocchL3MtXux64PbxkxepRuz-5z_PJDxPN8S3tyLyM0q6qzodvFDFwfHGUF5koAHWIaADpNrdGNj0&amp;t=ffffffff999c3159" type="text/javascript"></script>
+                <script type="text/javascript">
+                    //<![CDATA[
+                    Sys.WebForms.PageRequestManager._initialize('ScriptManager1', 'form1', ['tUpdatePanel2',''], [], [], 90, '');
+                    //]]>
+                </script>
+
+                <link rel="stylesheet" href="https://staticbd.yunxuetang.cn/yxt/SystemFiles/Themes/elearning30/new/jsstyle.min.css" />
+                <link rel="stylesheet" type="text/css" href="https://staticbd.yunxuetang.cn/yxt/SystemFiles/Themes/elearning30/kng01.css" />
+                <script src="https://staticbd.yunxuetang.cn/yxt/SystemFiles/Js/new/jstree.js?v=1.0.1.1"></script>
+                <script src='https://staticbd.yunxuetang.cn/yxt/SystemFiles/Js/kngupload/jquery/jquery.livequery.js'
+                        type="text/javascript"></script>
+                <script src="https://staticbd.yunxuetang.cn/yxt/SystemFiles/Js/new/functions.js"></script>
+                <style  type="text/css">
+                    .playgoon .el-playgoon-shadow {
+                        position: fixed;
+                        left: 0;
+                        top: 0;
+                        width: 100%;
+                        height: 100%;
+                        background: rgb(0, 0, 0, 0.5);
+                        z-index: 10000;
+                    }
+                    .playgoon .el-playgoon-body{
+                        position: fixed;
+                        left: 50%;
+                        margin-left: -260px;
+                        width: 520px;
+                        top: 50%;
+                        margin-top: -169px;
+                        height: 338px;
+                        background:url("https://staticbd.yunxuetang.cn/yxt/SystemFiles/Themes/elearning30/new/images/kng/catalog/catalog-bg.png");
+                        z-index: 10001;
+                    }
+
+                    .playgoon  .el-playgoon-close
+                    {
+                        position: absolute;
+                        top: 16px;
+                        right: 16px;
+                        width: 22px;
+                        height: 22px;
+                        background:url("https://staticbd.yunxuetang.cn/yxt/SystemFiles/Themes/elearning30/new/images/kng/catalog/close.png");
+                    }
+
+                    .playgoon .el-playgoon-title
+                    {
+                        margin-top: 44px;
+                        font-size: 24px;
+                        font-weight: 500;
+                        color: #262626;
+                        line-height: 32px;
+                    }
+
+                    .playgoon .el-playgoon-content
+                    {
+                        margin-top: 20px;
+                        font-size: 16px;
+                        font-weight: 400;
+                        color: #595959;
+                        line-height: 30px;
+                    }
+
+                    .flex-center
+                    {
+                        display: flex;
+                        justify-content: center;
+                    }
+
+                    .tc {
+                        text-align: center;
+                    }
+
+                    .btn.btn-ok
+                    {
+                        width: 220px;
+                        height: 36px;
+                        background-color: #436BFF;
+                        border-color: #436BFF;
+                        border-radius: 4px;
+                    }
+
+                    .btn.btn-ok:hover
+                    {
+                        background: #6b90ff;
+                        border-color: #6b90ff;
+                    }
+
+                    .goto-new
+                    {
+                        float:right;
+                        padding-right: 12px;
+                    }
+
+                    .ioc-arrow
+                    {
+                        display: inline-block;
+                        vertical-align: middle;
+                        width: 16px;
+                        height: 16px;
+                        background:url("https://staticbd.yunxuetang.cn/yxt/SystemFiles/Themes/elearning30/new/images/kng/catalog/right-arrow.png");
+                    }
+                </style>
+                <div class="main-content">
+                    <div class="content-top-bar">
+                        <span class='fixtip'>当前位置：</span>&nbsp;&nbsp;目录维护
+                        <div class="goto-new hand" onclick='goNewVersion(1)'>
+                            <span data-localize="kng_catalog_gonewversion"></span>
+                            <span class="ioc-arrow">&nbsp;</span>
+                        </div>
+                    </div>
+                    <div class="content-body">
+                        <span class="yflb text-red hide">迁移页面</span>
+                        <div class="clearfix">
+                            <div class="pull-left" style=" width:260px">
+                                <div class="search-box">
+                                    <input type="text" id="demo_q" data-localize="mgm_tip_entername" /><i onclick="searchTree();"></i>
+                                </div>
+                            </div>
+                            <div class="pull-right">
+                                <button class="btn btn-info" type="button" onclick="addCatalog(1);">
+                                    <span class="icon-yxt icon-white icon-edit mr5"></span><span  data-localize="kng_btn_adddirectory"></span></button>
+                                <button class="btn ml8" type="button" onclick="addCatalog(2);">
+                                    <span class="icon-yxt icon-add-directory mr5"></span><span  data-localize="kng_btn_addbulk"></span></button>
+                                <button class="btn ml8" type="button" onclick="SetAppCatalog();">
+                                    <span class="new-iconfont nicon-shezhi mr5"></span><span  data-localize="sys_btn_appsettings"></span></button>
+
+                                <input type="submit" name="btnInitCatalogfulltxt" value="初始化权限索引" id="btnInitCatalogfulltxt" class="hiddenelement" />
+                            </div>
+                        </div>
+                        <div class="clearfix knowledge-catelogue">
+                            <div class="knowledge-catelogue-left" style="height: 882px;">
+                                <!--目录树空样式-->
+                                <div  id="treeEmpty"  class="leftCatalogEmpty">
+                                    <div  class="empty-content">
+                                        <span class="no-catalog"></span>
+                                        <span class="empty-desc" data-localize="kng_lbl_nocatalog"></span>
+
+                                    </div>
+                                </div>
+                                <div id="container">
+                                </div>
+                                <div id="div_loading" class="loadingbg" style="min-height: 300px">
+                                </div>
+                            </div>
+                            <div class="knowledge-catelogue-right">
+                                <div id="UpdatePanel2">
+
+                                    <input type="submit" name="btnSearch" value="Search" id="btnSearch" class="hiddenelement" />
+                                    <input type="submit" name="btnDeleted" value="Deleted" onclick="loadCircle();" id="btnDeleted" class="hiddenelement" />
+                                    <input type="submit" name="btnWriteLog" value="" id="btnWriteLog" class="hiddenelement" />
+                                    <input type="submit" name="btnOrderIndex" value="" id="btnOrderIndex" class="hiddenelement" />
+                                    <div style="overflow: auto; min-height: 250px;" id="tableContainer">
+                                        <table class="table">
+                                            <tr>
+                                                <th class="text-left" width="300">
+                                                    <span  data-localize="common_lbl_heading"></span>
+                                                </th>
+                                                <th class="text-left" width="100">
+                                                </th>
+                                                <th class="text-center" width="90">
+                                                    <span  data-localize="common_lbl_sort"></span>
+                                                </th>
+                                                <th class="text-center" width="130">
+                                                    <span  data-localize="common_lbl_updatetime"></span>
+                                                </th>
+                                            </tr>
+
+                                            <tr>
+                                                <td width="220" title='企业内训'>
+                                                    企业内训
+                                                </td>
+                                                <td width="180" class="text-left">
+                                                    <span class="icon-yxt icon-edit" data-localizetitle="common_lbl_edit" style="cursor:pointer" onclick='editCatalog(this,"da601c53-3092-4183-a183-6b1e5f48fe12")'>
+                                                        &nbsp;</span> <span class="icon-yxt icon-change" data-localizetitle="common_lbl_move" style="cursor:pointer" onclick='MoveCatalog(this,"da601c53-3092-4183-a183-6b1e5f48fe12")'>&nbsp;</span> <span class="icon-yxt icon-delete"
+                                                                                                                                                                                                                                                            style="cursor:pointer" data-localizetitle="common_lbl_delete" onclick='deleteCatalog(this,"da601c53-3092-4183-a183-6b1e5f48fe12")'>&nbsp;</span>
+                                                </td>
+                                                <td width="90" class="text-center">
+                                                    <input name="rptKngCatalogList$ctl00$txtOrderIndex" type="text" value="1" maxlength="4" id="rptKngCatalogList_ctl00_txtOrderIndex" class="textbox color4" onfocus="getOrderIndex(this);" onblur="updateOrderIndex(this,&quot;da601c53-3092-4183-a183-6b1e5f48fe12&quot;)" onkeyup="OsTextBox.intKeyup(this);" onpaste="OsTextBox.intPaste(this);" ondrop="OsTextBox.intDrop(this);" style="width:40px;" />
+                                                </td>
+                                                <td class='text-center' width="130">
+                                                    2022-03-08
+                                                </td>
+                                            </tr>
+
+                                            <tr>
+                                                <td width="220" title='精选外培'>
+                                                    精选外培
+                                                </td>
+                                                <td width="180" class="text-left">
+                                                    <span class="icon-yxt icon-edit" data-localizetitle="common_lbl_edit" style="cursor:pointer" onclick='editCatalog(this,"de4c352d-bcce-4b8d-9d7e-0863195ae8ee")'>
+                                                        &nbsp;</span> <span class="icon-yxt icon-change" data-localizetitle="common_lbl_move" style="cursor:pointer" onclick='MoveCatalog(this,"de4c352d-bcce-4b8d-9d7e-0863195ae8ee")'>&nbsp;</span> <span class="icon-yxt icon-delete"
+                                                                                                                                                                                                                                                            style="cursor:pointer" data-localizetitle="common_lbl_delete" onclick='deleteCatalog(this,"de4c352d-bcce-4b8d-9d7e-0863195ae8ee")'>&nbsp;</span>
+                                                </td>
+                                                <td width="90" class="text-center">
+                                                    <input name="rptKngCatalogList$ctl01$txtOrderIndex" type="text" value="205" maxlength="4" id="rptKngCatalogList_ctl01_txtOrderIndex" class="textbox color4" onfocus="getOrderIndex(this);" onblur="updateOrderIndex(this,&quot;de4c352d-bcce-4b8d-9d7e-0863195ae8ee&quot;)" onkeyup="OsTextBox.intKeyup(this);" onpaste="OsTextBox.intPaste(this);" ondrop="OsTextBox.intDrop(this);" style="width:40px;" />
+                                                </td>
+                                                <td class='text-center' width="130">
+                                                    2022-03-08
+                                                </td>
+                                            </tr>
+
+                                        </table>
+                                    </div>
+                                    <div class="mt10">
+                                        <input type='hidden' id='pageNav' name='pageNav' value='1|0|20'>
+                                    </div>
+                                    <input type="hidden" name="hfParentId" id="hfParentId" value="root" />
+                                    <input type="hidden" name="hfCurrentCatalogID" id="hfCurrentCatalogID" />
+                                    <input type="hidden" name="hidOrder" id="hidOrder" />
+                                    <input type="hidden" name="hidSort" id="hidSort" />
+                                    <input type="hidden" name="hfOrderIndex" id="hfOrderIndex" />
+                                    <input type="hidden" name="hfOrderIndexID" id="hfOrderIndexID" />
+
+                                    <input type="hidden" name="ExecutorIds" id="ExecutorIds" />
+                                    <input type="hidden" name="ExecutorSubObjs" id="ExecutorSubObjs" />
+                                    <input type="hidden" name="ExecutorNames" id="ExecutorNames" />
+
+                                    <input type="hidden" name="hidAddUserGroupID" id="hidAddUserGroupID" />
+                                    <input type="hidden" name="hidAddUserGroupName" id="hidAddUserGroupName" />
+                                    <input type="hidden" name="hidAddUserGroupInfo" id="hidAddUserGroupInfo" />
+                                    <input type="hidden" name="hidLogType" id="hidLogType" />
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="playgoon hide" id="divCheck">
+                    <div class="el-playgoon-shadow"></div>
+                    <div class="el-playgoon-body">
+                        <div class="el-playgoon-close hand"></div>
+                        <div class="tc el-playgoon-title"><span data-localize="kng_catalog_newversion"></span></div>
+                        <div class="flex-center">
+                            <div class="el-playgoon-content">
+                                <div>1<span data-localize="kng_catalog_pause"></span><span data-localize="kng_catalog_newinterface"></span></div>
+                                <div>2<span data-localize="kng_catalog_pause"></span><span data-localize="kng_catalog_creating"></span></div>
+                                <div>3<span data-localize="kng_catalog_pause"></span><span data-localize="kng_catalog_supportexport"></span></div>
+                                <div>4<span data-localize="kng_catalog_pause"></span><span data-localize="kng_catalog_supportssharing"></span></div>
+                            </div>
+                        </div>
+                        <div class="tc mt30">
+                            <button type=button class="btn btn-info btn-ok" onclick="goCatalogNew()"><span data-localize="kng_catalog_gn"></span></button>
+                        </div>
+                        <div class="tc mt8">
+                            <input type="checkbox" id="next-tip"/>
+                            <label class="hand" for="next-tip"><span data-localize="kng_catalog_next"></span></label>
+                        </div>
+                    </div>
+                </div>
+                <script type="text/javascript">
+                    $('.el-playgoon-close').click(function () {
+                        checkSet();
+                        $('.playgoon').hide();
+                    });
+
+                    $('.el-playgoon-shadow').click(function () {
+                        checkSet();
+                        $('.playgoon').hide();
+                    });
+
+                    function showCheck() {
+                        $("#divCheck").show();
+                    }
+
+                    // 去新页面
+                    function goCatalogNew() {
+                        checkSet(function (logType) {
+                            goNewVersion(logType);
+                        })
+                    }
+
+                    // 检测是否设置下次不再提示
+                    function checkSet (callback) {
+                        var checked = $("#next-tip").prop("checked");
+                        var logType = checked ? 3 : 2;
+                        if (checked) {
+                            jQuery.ajax({
+                                type: "POST",
+                                contentType: "text/json",
+                                url: "/kng/services/KngComService.svc/SetFirstUsing",
+                                async: false,
+                                data: '{ "guideType" : 1 }',
+                                dataType: 'json',
+                                success: function (result) {
+                                    result = eval('(' + result + ')');
+                                    if (result.Status == "Ok") {
+                                        logType = 3;
+                                    } else {
+                                        console.log("跳转异常");
+                                    }
+                                }
+                            });
+                        }
+
+                        typeof callback === 'function' && callback(logType);
+                    }
+
+                    function goNewVersion(logType) {
+
+                        $("#hidLogType").val(logType);
+
+                        $("#btnWriteLog").click();
+
+                        location.href = "/nkng/#/catalog";
+                    }
+
+                </script>
+                <script type="text/javascript">
+
+
+                    function SetAppCatalog() {
+                        var url = '/kng/kngcatalog/setappcatalog.htm';
+                        openURL(url);
+                    }
+
+                    var option = {
+                        'core':
+                            {
+                                "animation": 0,
+                                "check_callback": true,
+                                'data': [],
+                                'themes': { 'icons': false, 'responsive': false }
+                            },
+                        "search": { show_only_matches: true },
+                        "plugins": ["search", "wholerow"]
+                    };
+
+                    $(function () {
+                        var arr = '{"currentCatalogID":"root"}';
+                        jQuery.ajax({
+                            type: "POST",
+                            contentType: "text/json",
+                            url: "/kng/services/KngComService.svc/GetKngCatalogForTreeNew",
+                            async: false,
+                            dataType: 'json',
+                            data: arr,
+                            success: function (result) {
+                                result = eval('(' + result + ')');
+                                if (result.Status == "Ok") {
+                                    option.core.data = result.Data;
+                                    if (result.Data[0].children.length > 0) {
+                                        $("#treeEmpty").hide();
+                                        $("#container").show();
+
+                                    } else {
+                                        $("#container").hide();
+                                        $("#treeEmpty").show();
+                                    }
+                                    $("#div_loading").remove();
+                                    var tree = $('#container').jstree(option);
+                                    tree.bind("select_node.jstree", function (e, data) {
+                                        $("#hfParentId").val(data.node.id);
+                                        loadKngCatalogByID();
+                                    });
+                                } else {
+                                    showWarningMsg(jQuery.i18n.map['kng_msg_getknowledgedirectory']);
+                                }
+                            }
+                        });
+
+                        $('#demo_q').bind('keyup', function (event) {
+                            if (event.keyCode == "13") {
+                                searchTree();
+                                return false;
+                            }
+                        });
+                    });
+
+                    function searchTree() {
+                        var to1 = false;
+                        if (to1) { clearTimeout(to1); }
+                        to1 = setTimeout(function () {
+                            var v = $('#demo_q').val();
+                            $('#container').jstree(true).search(v);
+                        }, 250);
+                    }
+
+                    function reloadTree() {
+                        $('#container').data("jstree").destroy();
+                        var currentCatalogID = $("#hfParentId").val();
+                        var arr = '{"currentCatalogID":"' + currentCatalogID + '"}';
+                        jQuery.ajax({
+                            type: "POST",
+                            contentType: "text/json",
+                            url: "/kng/services/KngComService.svc/GetKngCatalogForTreeNew",
+                            async: false,
+                            data: arr,
+                            dataType: 'json',
+                            success: function (result) {
+                                result = eval('(' + result + ')');
+                                if (result.Status == "Ok") {
+                                    option.core.data = result.Data;
+                                    if (result.Data[0].children.length > 0) {
+                                        $("#treeEmpty").hide();
+                                        $("#container").show();
+
+                                    } else {
+                                        $("#container").hide();
+                                        $("#treeEmpty").show();
+                                    }
+                                    $("#div_loading").remove();
+                                    var tree = $('#container').jstree(option);
+                                    tree.bind("select_node.jstree", function (e, data) {
+                                        $("#hfParentId").val(data.node.id);
+                                        loadKngCatalogByID();
+                                    });
+
+                                } else {
+                                    showWarningMsg("获取知识目录失败。");
+                                }
+                            }
+                        });
+                    }
+
+                    function search() {
+                        var v = $("#txtSearch").val();
+                        if (!v) {
+                            return;
+                        }
+                        showDealingMsg(jQuery.i18n.map['sty_msg_loading']);
+                        window.document.getElementById('btnSearch').click();
+                    }
+
+                    function loadKngCatalogByID() {
+                        var currentKngCatalogID = $("#hfParentId").val();
+                        if (!currentKngCatalogID) {
+                            showWarningMsg(jQuery.i18n.map['kng_lbl_choosecatalog']);
+                            return;
+                        }
+                        showDealingMsg(jQuery.i18n.map['sty_msg_loading']);
+                        window.document.getElementById('btnSearch').click();
+                    }
+
+                    function MoveCatalog(sender, id) {
+                        var currentKngCatalogID = $("#hfParentId").val();
+                        ShowIFrameDialog(jQuery.i18n.map['kng_tit_directorymove'], 420, 480, "/kng/KngCatalog/Detail/KnowledgeCatalogMoveNew.aspx?pid=" + currentKngCatalogID + "&cid=" + id + "&pagecode=kng_kngcatalogmgmt");
+                    }
+
+                    function editCatalog(sender, id) {
+                        var currentKngCatalogID = $("#hfParentId").val();
+                        ShowIFrameDialog(jQuery.i18n.map['kng_tit_directoryedit'], 710, 700, "/kng/KngCatalog/Detail/AddCatalog.aspx?pagecode=kng_kngcatalogmgmt&pid=" + currentKngCatalogID + "&cid=" + id, "", "", reloadpage);
+                    }
+                    //归档、取消归档、设置隐藏、取消隐藏、删除时打开转圈圈
+                    function loadCircle() {
+                        showDealingMsg(jQuery.i18n.map['sty_msg_loading']);
+                        return true;
+                    }
+                    function deleteCatalog(sender, id) {
+                        $("#hfCurrentCatalogID").val(id);
+                        if (confirm(jQuery.i18n.map['opt_msg_deletecontent'])) {
+                            $("#" + "btnDeleted").click();
+                        }
+                    }
+                    var oldOrderIndex = 0;
+                    //获得排序号
+                    function getOrderIndex(obj) {
+                        oldOrderIndex = obj.value;
+                    }
+                    //排序修改
+                    function updateOrderIndex(obj, catalogID) {
+                        var newValue = obj.value;
+                        if (oldOrderIndex == newValue) {
+                            return false;
+                        }
+                        if (!catalogID || catalogID == "") {
+                            return false;
+                        }
+                        $("#" + "hfOrderIndex").val(newValue);
+                        $("#" + "hfOrderIndexID").val(catalogID);
+                        $('#' + 'btnOrderIndex').click();
+                    }
+                    function addCatalog(type) {
+                        var currentKngCatalogID = $("#hfParentId").val();
+                        if (currentKngCatalogID == "root") {
+                            if (type == 1) {
+                                ShowIFrameDialog(jQuery.i18n.map['kng_tit_directoryadd'], 710, 700, "/kng/KngCatalog/Detail/AddCatalog.aspx?pagecode=kng_kngcatalogmgmt&pid=" + currentKngCatalogID, "", "", reloadpage);
+                            }
+                            else {
+                                ShowIFrameDialog(jQuery.i18n.map['kng_tit_directorybatchadd'], 680, 530, "/kng/KngCatalog/Detail/BatchCreateKngCatalogNew.aspx?pid=" + currentKngCatalogID);
+                            }
+
+                        } else {
+                            var arr = '{"catalogID":"' + currentKngCatalogID + '"}';
+                            jQuery.ajax({
+                                type: "POST",
+                                contentType: "text/json",
+                                url: "/kng/services/KngComService.svc/CheckParentCatalogVersion",
+                                async: false,
+                                dataType: 'json',
+                                data: arr,
+                                success: function (result) {
+                                    result = eval('(' + result + ')');
+                                    if (result.Status == "Ok") {
+                                        if (result.Data == "1") {
+                                            showWarningMsg(jQuery.i18n.map['kng_msg_rootdirectory']);
+                                        } else {
+                                            if (type == 1) {
+                                                ShowIFrameDialog(jQuery.i18n.map['kng_tit_directoryadd'], 710, 700, "/kng/KngCatalog/Detail/AddCatalog.aspx?pagecode=kng_kngcatalogmgmt&pid=" + currentKngCatalogID, "", "", reloadpage);
+                                            }
+                                            else {
+                                                ShowIFrameDialog(jQuery.i18n.map['kng_tit_directorybatchadd'], 680, 530, "/kng/KngCatalog/Detail/BatchCreateKngCatalogNew.aspx?pid=" + currentKngCatalogID + "&pagecode=kng_kngcatalogmgmt");
+                                            }
+                                        }
+                                    }
+                                }
+                            });
+                        }
+                    }
+
+                    function AddTree(id, name) {
+                        var ref = $('#container').jstree(true),
+                            sel = ref.get_selected();
+                        if (!sel.length) { return false; }
+                        sel = sel[0];
+                        if (!ref.get_node(id)) {
+                            sel = ref.create_node(sel, { "type": "file", "id": "" + id + "", "text": "" + name + "" });
+                        }
+                        else {
+                            sel = ref.set_text(id, name);
+                        }
+                        search();
+                    }
+
+                    function MoveTree() {
+                        reloadTree();
+                        search();
+                    }
+                </script>
+
+                <div class="aspNetHidden">
+
+                    <input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="ACA62030" />
+                    <input type="hidden" name="__VIEWSTATEENCRYPTED" id="__VIEWSTATEENCRYPTED" value="" />
+                    <input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="YFpsH+qdFMR/oqAfC275Fmmh580wMprlKCpBgo0svt4/BqZkRW6UmdGbsWB/qdKPK7/wEZ+NgDn3ovPhPAGfWng44iZAok7PPdT+DvHhbaoPq842McoGn58qx947JtEa81eF7WcHcp7pink1Thtvewyjt9YX/XCMwWCXoQxIvprun33FaMFPWEqwZxGKnaRcARLMq9fb7MsvcTZUkGzRsSDjYORDSdV5eU//Zr7fbIdzl6xhmKYtHrNweqbwTxbPz+pSVrRMTe9iCJE8zkNNKjmBfLMWxgxAer7l8OwFza9fsrQsB+q0JBiuD36vx/TTcaf6nUpxHETRmmJk4Omi3ZSbmtMsGk0fXp4tKVxIfUg+E5Se0FFGHfO03fmuvFIDEJS36XAK2CtX17y3VawhNf/vu3N8Mw3q/2K5MhGjy/3jhIVRqAZXGLyHeZ/NO7HyaCzxTBn6zTaF9urA+4YrO8l0XE5R1TdrP14YQ8WxcuJpCIOidpnX7xpN9IIzQBllep4Lg5jFhuy53Y1Ljjf1FcU1Q1h6o6izXh1MmnGG/m5OcGAEnzVNCcOyKa1sXYWqFz7orJtKF8Rep8gC" />
+                </div>
+
+                <script type="text/javascript">
+                    //<![CDATA[
+                    function JSCallPageRefreshEvent(){setTimeout(doJSCallPageRefreshEvent,100);} function doJSCallPageRefreshEvent(){JsClickButton("btnSearch");}closeDealingMsg();//]]>
+                </script>
+                <script language='javascript'>try {loadProperties('zh','kng');  }catch (e) {}</script><script language='javascript' for='document' event='onkeydown'>
+                if(event.srcElement.type=='text'&&event.keyCode==13)
+                {
+                    event.keyCode=9;
+                }
+            </script></form>
+        </div>
+
+    </div>
+
+
+    <div class="pagefooter" id="divPageFooter">
+
+        <style type ="text/css">
+            div.pagefooter{width: 100%;
+                height: 105px;
+                overflow: hidden;
+                background: #ebebeb;
+                font-size: 12px;
+                text-align: center;
+                color: #fff;margin-top: 10px;}
+            div.pagefooter a,div.pagefooter a:hover{color:#999;}
+        </style>
+        <div style="margin:23px auto; text-align:center; color:#999; line-height:24px;" title="">
+            <div>
+                &copy; 2019 All Rights Reserved&nbsp;&nbsp;<span data-localize="home_lbl_yunxuetang"></span> <span data-localize="home_lbl_copyright"></span>&nbsp;&nbsp;苏ICP备14034064号-6
+            </div>
+            <div>
+                <a href="http://www.yunxuetang.cn/" target="_blank" data-localize="home_lbl_yunxuetang"></a> <span data-localize="home_lbl_technicalsupport"></span>
+                &nbsp;&nbsp;<a href="http://elearning.yunxuetang.cn/registerprotocol.htm" target="_blank" data-localize="home_lbl_serviceagreement"></a>
+                &nbsp;&nbsp;400-928-6900
+            </div>
+        </div>
+        <script type="text/javascript">
+            loadPropertiesForAsync("divPageFooter");
+        </script>
+    </div>
+</div>
+
+
+
+
+<script type="text/javascript">
+    $(document).ready(function () {
+        var pageCode='kng_kngcatalogmgmt';
+        var disasterMode="0";
+        var getDisasterCookie = getCookieDisasterMode("isOpenDisasterMode");
+        if (getDisasterCookie) {
+            disasterMode=getDisasterCookie;
+            if (disasterMode=="1" || (disasterMode=="2" && (pageCode=="homepage" || pageCode=="login"))){
+                $("body").addClass("bodyDisaster");
+            }
+        } else {
+            var orgid='b7adf5e4-3709-48cd-9929-9e48e664310c';
+            var arr = '{"orgid":"' + orgid + '","paraKey":"appGrayModel"}';
+            jQuery.ajax({
+                type: "POST",
+                contentType: "text/json",
+                url: "/Services/CommonService.svc/GetOrgParamByOrgAndKey",
+                data: arr,
+                dataType: 'json',
+                cache: false,
+                success: function (result) {
+                    disasterMode=result||"0";
+                    setCookieDisasterMode("isOpenDisasterMode", disasterMode);
+                    if (disasterMode=="1" || (disasterMode=="2" && (pageCode=="homepage" || pageCode=="login"))){
+                        $("body").addClass("bodyDisaster");
+                    }
+                },
+                error: function (xmlHttpRequest, error) {
+                }
+            });
+
+        }
+
+    });
+    function setCookieDisasterMode(name, value) {
+
+        var expdate = new Date(new Date().getTime() + 60*60*1000);
+        document.cookie = name + "=" + escape(value) + ";expires=" + expdate.toUTCString()+"; path=/;";
+    }
+    function getCookieDisasterMode(name) {
+        var start = document.cookie.indexOf(name + "=");
+
+        if (start != -1) {
+            start = start + name.length + 1;
+            var end = document.cookie.indexOf(";", start);
+            if (end == -1)
+                end = document.cookie.length;
+            return unescape(document.cookie.substring(start, end));
+        }
+        return "";
+    }
+</script>
+<style>
+    .bodyDisaster {
+        -webkit-filter: grayscale(100%);
+        -moz-filter: grayscale(100%);
+        -ms-filter: grayscale(100%);
+        -o-filter: grayscale(100%);
+        filter:progid:DXImageTransform.Microsoft.BasicImage(grayscale=1);
+        _filter:none;
+    }
+</style>
+</body>
+</html>
