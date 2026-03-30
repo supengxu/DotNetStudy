@@ -8,6 +8,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Reactor", "Reactor\Reactor.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReactorClient", "ReactorClient\ReactorClient.csproj", "{6D5E50D3-6AC2-4811-A1FF-740B94AC16DE}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ThreadLocal", "ThreadLocal\ThreadLocal.csproj", "{1A3DDCF9-89F6-408A-9CE3-BDCEF32AF5DF}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -30,5 +32,9 @@ Global
 		{6D5E50D3-6AC2-4811-A1FF-740B94AC16DE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6D5E50D3-6AC2-4811-A1FF-740B94AC16DE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6D5E50D3-6AC2-4811-A1FF-740B94AC16DE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1A3DDCF9-89F6-408A-9CE3-BDCEF32AF5DF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1A3DDCF9-89F6-408A-9CE3-BDCEF32AF5DF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1A3DDCF9-89F6-408A-9CE3-BDCEF32AF5DF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1A3DDCF9-89F6-408A-9CE3-BDCEF32AF5DF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
