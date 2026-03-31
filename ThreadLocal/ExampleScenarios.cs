@@ -363,33 +363,66 @@ public class ExampleScenarios
         Console.WriteLine("\n========== SimpleAsyncLocal 演示 ==========");
         Console.WriteLine("使用自定义 SimpleAsyncLocal 实现展示 ExecutionContext 流转");
         Console.WriteLine();
+        Console.WriteLine("注意：在控制台程序中 Task.Delay 不切换线程，");
+        Console.WriteLine("      所以需要用 Task.Run 强制切换线程来展示区别\n");
 
-        // 创建自定义 SimpleAsyncLocal 实例
-        SimpleAsyncLocal<string> simpleAsyncLocal = new SimpleAsyncLocal<string>();
-
-        // 测试：设置值 -> await -> 验证值是否保留
-        TestAsyncFlow(simpleAsyncLocal).Wait();
+        // 测试：设置值 -> 切换线程 -> 验证值是否保留
+        TestThreadSwitchComparison().Wait();
 
         Console.WriteLine("========== 演示结束 ==========\n");
     }
 
-    private static async Task TestAsyncFlow(SimpleAsyncLocal<string> simpleAsyncLocal)
+    private static async Task TestThreadSwitchComparison()
     {
-        simpleAsyncLocal.Value = "SimpleAsyncLocal_Value";
-        Console.WriteLine("【SimpleAsyncLocal 测试】");
+        // 创建 SimpleAsyncLocal 和 SimpleThreadLocal
+        SimpleAsyncLocal<string> asyncLocal = new SimpleAsyncLocal<string>();
+        SimpleThreadLocal<string> threadLocal = new SimpleThreadLocal<string>(() => "default");
 
-        string beforeAwait = simpleAsyncLocal.Value;
-        Console.WriteLine($"  Before await: {beforeAwait}");
+        Console.WriteLine("【ThreadLocal vs AsyncLocal 强制线程切换对比】\n");
 
-        // 等待一段时间（模拟异步操作）
-        await Task.Delay(100);
+        // ===== 关键理解：ExecutionContext 向前流转，不向后流转 =====
+        // 正确用法：在 await 前设置值（在原始 ExecutionContext 上）
+        
+        // 1. 在主线程设置 AsyncLocal 值
+        asyncLocal.Value = "AsyncLocal_Value";
+        Console.WriteLine($"[主线程 {Thread.CurrentThread.ManagedThreadId}] AsyncLocal 设置: {asyncLocal.Value}");
+        
+        // 2. 在主线程设置 ThreadLocal 值
+        threadLocal.Set("ThreadLocal_Value");
+        Console.WriteLine($"[主线程 {Thread.CurrentThread.ManagedThreadId}] ThreadLocal 设置: {threadLocal.Get()}");
+        
+        // 3. 使用 Task.Run 强制切换线程
+        int beforeAwaitThreadId = Thread.CurrentThread.ManagedThreadId;
+        
+        await Task.Run(() =>
+        {
+            int taskThreadId = Thread.CurrentThread.ManagedThreadId;
+            Console.WriteLine($"\n[Task.Run 线程 {taskThreadId}] 进入新线程");
+            
+            // AsyncLocal 值从原始 ExecutionContext 流转过来
+            Console.WriteLine($"  AsyncLocal.Value = {asyncLocal.Value} (值已流转)");
+            
+            // ThreadLocal 值丢失（因为绑定到线程，不是 ExecutionContext）
+            Console.WriteLine($"  ThreadLocal.Get() = {threadLocal.Get()} (绑定到线程 {beforeAwaitThreadId}，当前线程 {taskThreadId})");
+        });
 
-        string afterAwait = simpleAsyncLocal.Value;
-        Console.WriteLine($"  After await: {afterAwait}");
-        Console.WriteLine($"  结果: {(beforeAwait == afterAwait ? "✓ 值已保留（流转成功）" : "✗ 值丢失")}");
-        Console.WriteLine();
+        Console.WriteLine($"\n回到主线程 {Thread.CurrentThread.ManagedThreadId}");
+        
+        // 4. await 后验证
+        Console.WriteLine($"  AsyncLocal.Value = {asyncLocal.Value} (ExecutionContext 流转回来)");
+        Console.WriteLine($"  ThreadLocal.Get() = {threadLocal.Get()} (仍然是主线程的值)");
+        
+        Console.WriteLine("\n分析：");
+        Console.WriteLine("  - AsyncLocal: 值随 ExecutionContext 流转，跨线程边界保留");
+        Console.WriteLine("  - ThreadLocal: 值绑定到线程，线程切换后只能访问当前线程的值");
 
         // 清理
-        simpleAsyncLocal.Remove();
+        threadLocal.Remove();
+        asyncLocal.Remove();
+
+        Console.WriteLine("\n【结论】");
+        Console.WriteLine("  AsyncLocal 基于 ExecutionContext 流转，值向前传递（不向后）");
+        Console.WriteLine("  要在 await 后看到值，必须在 await 前设置！");
+        Console.WriteLine("  ThreadLocal 绑定到线程 ID，每个线程有独立的值副本");
     }
 }

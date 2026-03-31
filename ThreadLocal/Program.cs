@@ -33,6 +33,14 @@ namespace ThreadLocalDemo
             Console.WriteLine("\n=== Demo 5: SimpleAsyncLocal 自定义实现 ===");
             ExampleScenarios.SimpleAsyncLocalDemo();
 
+            
+            ThreadLocal<string> threadLocal = new ThreadLocal<string>(() => "ThreadLocal");
+            
+            
+            ThreadLocal<string> threadLocal2 = new ThreadLocal<string>(() => "ThreadLocal");
+
+            threadLocal2.Value = "222";
+            // threadLocal.Value = 
             Console.WriteLine();
             Console.WriteLine("=== 程序结束 ===");
         }
